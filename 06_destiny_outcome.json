@@ -1,1 +1,122 @@
-[]
+[
+  {
+    "label": "Triumph",
+    "description": "The central aim is achieved without ruinous cost, validating teamwork, preparation, and principled choices. Reputation consolidates into earned authority; internal conflicts resolve into integration rather than suppression."
+  },
+  {
+    "label": "Redemption",
+    "description": "Past harms are atoned for through costly, restorative action that repairs specific damage and changes habits. Reputation is re‑negotiated, not erased; the character becomes trustworthy because they behave differently under pressure."
+  },
+  {
+    "label": "Tragic Downfall",
+    "description": "Strengths curdle into vices and the fatal flaw consumes the character. The world learns from their wreckage; the character does not, and that is the tragedy."
+  },
+  {
+    "label": "Martyrdom",
+    "description": "The character’s death secures others’ survival or freedom and transforms reputation into symbol. The moral is not that death is good, but that some goods outrank self‑preservation."
+  },
+  {
+    "label": "Exile",
+    "description": "Cast out or self‑banished to protect others or survive, the character’s arc pivots to growth in solitude. Exile reframes belonging and often sets up a harder, wiser return."
+  },
+  {
+    "label": "Ascension",
+    "description": "Raised to rulership, sainthood, or a higher order of being, the character now faces the second mountain: wielding power without corruption. The end is a beginning disguised as a coronation."
+  },
+  {
+    "label": "Hollow Victory",
+    "description": "The goal is achieved but meaning is lost—broken relationships, corrupted self. It interrogates whether the motivation was worthy and whether the plan extracted an unforgivable price."
+  },
+  {
+    "label": "Pyrrhic Victory",
+    "description": "Success at catastrophic cost—a city saved, a family lost. It leaves a mixed legacy and warns future leaders about the hidden denominator in “win at any cost.”"
+  },
+  {
+    "label": "Bittersweet",
+    "description": "Gains and losses are both real; hope survives alongside grief. The arc honors ambiguity and the maturity required to carry it."
+  },
+  {
+    "label": "Reconciliation",
+    "description": "Estranged bonds are repaired through truth, apology, and changed behavior. It resolves internal shame loops and re‑anchors the character inside a chosen community."
+  },
+  {
+    "label": "Corruption",
+    "description": "The character embraces darkness for power or survival and remakes their values to match. Reputation flips; former allies become obstacles, then examples."
+  },
+  {
+    "label": "Enlightenment",
+    "description": "A durable clarity reorders choices and identity; the character gains insight without detachment from responsibility. The world changes because they do."
+  },
+  {
+    "label": "Imprisonment",
+    "description": "Constrained physically or socially, the character’s victory becomes endurance, influence from within, or escape. Justice or injustice colors the moral."
+  },
+  {
+    "label": "Liberation",
+    "description": "Chains—literal or systemic—are broken, turning criminality into catalyst in retrospect. The world’s map updates; so does the character’s sense of self."
+  },
+  {
+    "label": "Forgotten Obscurity",
+    "description": "The character fades without recognition; the impact, if any, is private. It challenges glory motivations and exalts quiet fidelity."
+  },
+  {
+    "label": "Scapegoated",
+    "description": "Blame is assigned to protect a system; the character bears the stain. Truth may surface later, but the human cost is already paid."
+  },
+  {
+    "label": "Crowned Ruler",
+    "description": "Authority is granted or seized; destiny tests whether stewardship or ego will rule. Success depends on tempering flaws with counsel and constraint."
+  },
+  {
+    "label": "Dethroned",
+    "description": "Authority is lost through coup or failure. The arc asks whether the character learns, calcifies, or becomes the thing they fought."
+  },
+  {
+    "label": "Unmasked",
+    "description": "Secrets come to light and consequences land. The character’s next identity—honest or defiant—begins here."
+  },
+  {
+    "label": "Reformed",
+    "description": "Habits and patterns change in visible, sustained ways. The plot proves it by presenting the old trigger and showing a different choice."
+  },
+  {
+    "label": "Ruined",
+    "description": "Resources, name, or health collapse beyond repair. The character may still achieve a moral rescue, but the worldly cost is permanent."
+  },
+  {
+    "label": "Wanderer’s Return",
+    "description": "The cyclical journey ends at home transformed; old rooms feel smaller because the character is larger. Acceptance—by self and by others—determines whether the change endures."
+  },
+  {
+    "label": "Founder/Teacher",
+    "description": "The character builds institutions or disciples; legacy becomes the lens. The test is whether the creation stays humane when scaled."
+  },
+  {
+    "label": "Immortalized",
+    "description": "The character becomes myth or symbol; biography hardens into parable. Their reputation outlives their flaws, for good or ill."
+  },
+  {
+    "label": "Bound to the Land/Charge",
+    "description": "Fused to a duty or place, the character wins a sacred, limiting victory. Stewardship outranks freedom; meaning replaces mobility."
+  },
+  {
+    "label": "Doomed by Prophecy",
+    "description": "Attempts to escape fate fulfill it; fatalism becomes the trap. The story warns against confusing foreknowledge with necessity."
+  },
+  {
+    "label": "Exonerated",
+    "description": "False blame lifts; truth repairs reputation and reopens futures. The story reframes past endurance as integrity, not impotence."
+  },
+  {
+    "label": "Self‑Exile for Integrity",
+    "description": "The character leaves to preserve principles or protect others. Reputation may dim; conscience brightens."
+  },
+  {
+    "label": "Reborn",
+    "description": "Identity is remade (new name, calling, or body). The past remains fact, but it no longer rules the present."
+  },
+  {
+    "label": "Integrated",
+    "description": "The character harmonizes competing values (duty and love, justice and mercy) into a workable life. It’s quieter than triumph and rarer."
+  }
+]

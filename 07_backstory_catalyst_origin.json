@@ -1,1 +1,202 @@
-[]
+[
+  {
+    "label": "Exiled from a Holy City",
+    "description": "Banished for doctrine or politics, the character carries both prestige and stigma. It fuels redemption or revolution motivations and seeds secrets about what truly happened, putting destiny on a collision course with the old order."
+  },
+  {
+    "label": "Orphaned in a Border War",
+    "description": "Raised by survivors or soldiers, they see costs others romanticize. Protection and justice motivations run hot; occupation often skews toward ranger, medic, or advocate, with destiny circling cycles of violence to break or perpetuate."
+  },
+  {
+    "label": "Child of a Fallen Empire",
+    "description": "Ruins shaped their bedtime stories. Restoration versus reinvention splits motivation; reputation flickers between relic and reformer, and secrets about the fall can crown or crush them."
+  },
+  {
+    "label": "Raised by an Order",
+    "description": "Monastic or militant training grants discipline and blind spots. Secrets about the order’s compromises become plot powder; internal conflict erupts when vows collide with conscience."
+  },
+  {
+    "label": "Survivor of Famine",
+    "description": "Scarcity etched prudence and hoarding into bone. Merchant or agrarian occupations follow; flaws like miserliness or ruthless triage arise; destiny measures whether they can move from fear to stewardship."
+  },
+  {
+    "label": "Sole Witness to a Crime",
+    "description": "Knowledge without proof breeds paranoia and duty. Detective or whistleblower arcs beckon; the secret becomes both shield and target until truth can be made public."
+  },
+  {
+    "label": "Inherited a Blood Curse",
+    "description": "An ancestral stain marks body or fate. It strains relationships, invites exploitation, and frames destiny as redemption, mastery, or corruption depending on choices."
+  },
+  {
+    "label": "Escaped Cult Upbringing",
+    "description": "Manipulation was the mother tongue. Truth and freedom motivate everything; reputation is fragile, and secrets about indoctrination make trust both precious and difficult."
+  },
+  {
+    "label": "Raised in a Pirate Haven",
+    "description": "Loyalty and lawlessness braided together. Outlaw occupations feel natural; destiny offers crown or gallows; reputation depends on who writes the law."
+  },
+  {
+    "label": "Child Prodigy from a Backwater",
+    "description": "Genius in obscurity breeds hunger and resentment. Mastery and legacy motivate; patrons court and exploit; reputation swings between marvel and threat."
+  },
+  {
+    "label": "Former Heir Disinherited",
+    "description": "Title lost for scandal or principle. Motivation splits—reclaim or redefine; secret alliances form; destiny tests whether identity depends on surname or service."
+  },
+  {
+    "label": "Village Destroyed by a Monster",
+    "description": "The antagonist has a face and a name. Revenge and protection clarify purpose; warrior or hunter roles beckon; hollow or pyrrhic victory lurks if obsession takes the wheel."
+  },
+  {
+    "label": "Raised Among Another People",
+    "description": "Cross‑cultural identity confers empathy and alienation. Diplomat arcs flourish; reputation toggles between bridge and traitor; destiny asks which home they choose—or whether they can hold both."
+  },
+  {
+    "label": "Pressed into Service as a Child",
+    "description": "Early conscription twisted agency and ethics. Internal conflict simmers; reformer or tyrant paths diverge based on whether power is used to heal or repeat the harm."
+  },
+  {
+    "label": "Apprenticed to a Corrupt Master",
+    "description": "Craft learned alongside compromise. Motivation splits (purify the craft vs. profit); secrets bind past to present; redemption may require outing the teacher and oneself."
+  },
+  {
+    "label": "Miraculously Healed as a Youth",
+    "description": "Life feels like borrowed time. Faith and healing motivate; fanaticism tempts; martyrdom is always on the table unless boundaries are learned."
+  },
+  {
+    "label": "Found with No Memory",
+    "description": "A tabula rasa others project upon. Secrets define identity; destiny hinges on whether the recovered past saves or sabotages who they’ve become."
+  },
+  {
+    "label": "Raised in a Fortress School",
+    "description": "Elite training inside insulated walls. Competence soars; naiveté about politics festers; first contact with the real world bruises, then educates."
+  },
+  {
+    "label": "Child of Famous Villains",
+    "description": "Inherits stigma and resources. Redemption fights temptation; reputation combusts on contact; destiny asks whether blood or choice wins."
+  },
+  {
+    "label": "Grew Up in Catacombs",
+    "description": "Survival in margins forged stealth and superstition. Thief or spy comes naturally; sunlight and society require unlearning fears."
+  },
+  {
+    "label": "War Refugee Turned Smuggler",
+    "description": "Mobility became a survival ethic. Protector and freedom motivations align; law becomes a tool or obstacle depending on who suffers under it."
+  },
+  {
+    "label": "Former Sanctum Acolyte Expelled",
+    "description": "Knows sacred machinery from the inside. Secrets about relics and rites drive plot; reputation reads apostate or whistleblower."
+  },
+  {
+    "label": "Born Under Omens",
+    "description": "Prophecy shadows every choice. Destiny pressure attracts protectors and exploiters; the arc tests free will against expectation."
+  },
+  {
+    "label": "Street Performer Lineage",
+    "description": "Craft, charm, and hustle were breakfast. Bard or merchant paths open; reputation is delight or disrepute depending on audience and timing."
+  },
+  {
+    "label": "Raised by a Reformed Criminal",
+    "description": "Home was a moral laboratory. Honor and expedience duel; secrets tie to old crews; destiny asks whether cycles can truly break."
+  },
+  {
+    "label": "Child of a Mixed‑Kingdom Marriage",
+    "description": "Political pawn by birth. Diplomatic instincts come early; betrayal carries national stakes; unity motivation runs personal and public."
+  },
+  {
+    "label": "Only Survivor of a Failed Expedition",
+    "description": "Guilt braided to rare knowledge. Truth and discovery motivate; reputation wobbles between cursed and indispensable."
+  },
+  {
+    "label": "Sold to a Guild",
+    "description": "Contracted childhood bound adulthood. Mastery comes at the price of autonomy; oaths feel like chains until renegotiated."
+  },
+  {
+    "label": "Raised in a Sanctuary for Monsters",
+    "description": "Empathy for the Other is native. External conflicts blur moral lines; reputation among the fearful is precarious."
+  },
+  {
+    "label": "Adopted by the Crown",
+    "description": "Power adjacent without blood. Gratitude and impostor syndrome wrestle; destiny toggles between steward and scapegoat."
+  },
+  {
+    "label": "Proclaimed Chosen by an Oracle",
+    "description": "Expectations shaped identity early. Faith or honor wars with individuality; destiny risks self‑fulfilling doom unless reinterpreted."
+  },
+  {
+    "label": "Ex‑Gladiator Freed by Patron",
+    "description": "Debt and trauma share a room. Protector arcs ignite; triggers complicate peace; reputation is feared and admired in equal measure."
+  },
+  {
+    "label": "Caravan‑Scholar Childhood",
+    "description": "Cosmopolitan roads taught languages and maps. Explorer and diplomat roles fit; cross‑cultural reputation is both passport and target."
+  },
+  {
+    "label": "Raised in a Floating City",
+    "description": "Privilege strapped to precarity. Engineer or leader arcs inherit tangible stakes—gravity always wins if arrogance reigns."
+  },
+  {
+    "label": "Scion of a Guild Mafia",
+    "description": "Loyalty was a ledger. Secrets and reputation are currency; destiny asks whether they reform the house or rule it."
+  },
+  {
+    "label": "Child of a Miracle and a Fraud",
+    "description": "One parent healed, one conned. Truth obsession and charisma tangle; internal conflict over authenticity runs hot."
+  },
+  {
+    "label": "Hid a Sibling’s Crime",
+    "description": "Early complicity forged secrecy. Reputation risk compounds over time; unmasking threatens all bonds unless confession leads."
+  },
+  {
+    "label": "Frontier Homestead Upbringing",
+    "description": "Competence and suspicion of cities came standard. Ranger/engineer roles thrive; diplomacy with institutions must be learned."
+  },
+  {
+    "label": "Orphanage Run by Spies",
+    "description": "Childhood games were tradecraft. Intimacy is complex; destiny circles unmasking or becoming the handler who breaks the cycle."
+  },
+  {
+    "label": "Born into Debt Bondage",
+    "description": "Freedom was the first dream. Wealth and security motivations burn bright; law looks different from the bottom."
+  },
+  {
+    "label": "Childhood Friend’s Betrayal",
+    "description": "Trust weaponized early. Truth and justice motivations run hot; reconciliation or revenge determines what kind of adult emerges."
+  },
+  {
+    "label": "Raised by Exiles",
+    "description": "Family identity centered on loss. Tradition and restoration motivations push against belonging to a new home."
+  },
+  {
+    "label": "City‑Plague Survivor",
+    "description": "Lived through quarantine and grief. Healer or civic‑reformer arcs make sense; fatalism lurks unless meaning is built."
+  },
+  {
+    "label": "Temple Foundling",
+    "description": "Grew up under sermons and charity. Faith, shame, and gratitude intermix; destiny wrestles with institutional loyalty vs. reform."
+  },
+  {
+    "label": "Shipwrecked Youth",
+    "description": "Learned resourcefulness against the sea. Explorer and navigator paths beckon; storms outside mirror storms within."
+  },
+  {
+    "label": "Miner’s Child from a Company Town",
+    "description": "Saw exploitation up close. Equality and progress motives flare; unions and strikes are familiar terrain."
+  },
+  {
+    "label": "Border Courier Family",
+    "description": "Lived on the line between worlds. Herald, scout, or smuggler paths abound; reputation as reliable is the real passport."
+  },
+  {
+    "label": "Raised by a Traveling Circus",
+    "description": "Found family by design. Performance skill is survival; reputation oscillates between wonder and wariness."
+  },
+  {
+    "label": "Foundling of the Witchwood",
+    "description": "Forest spirits nursed and warned. Stewardship and taboo dance; towns fear what raised you."
+  },
+  {
+    "label": "Palace Servant Childhood",
+    "description": "Invisible among power. You know where secrets sleep; ambition and discretion duel in every choice."
+  }
+]

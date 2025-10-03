@@ -1,1 +1,242 @@
-[]
+[
+  {
+    "label": "Hubris",
+    "description": "An overconfidence in one’s specialness that rejects counsel and underestimates risk. It weaponizes admirable strengths (courage, brilliance) into grandstanding, and it bends motivations like mastery or justice toward spectacle. Under pressure, hubris steers arcs toward downfall or pyrrhic victory and invites reputational blowback when secrets or mistakes surface."
+  },
+  {
+    "label": "Obsession",
+    "description": "A fixation that crowds out perspective, sleep, and relationships. Obsession can supercharge motivations (revenge, discovery, mastery) but narrows empathy and blinds to collateral damage. The arc hinges on whether the character learns to subordinate the focus to a larger good or burns everything for it."
+  },
+  {
+    "label": "Addiction",
+    "description": "Dependence on a substance or behavior that erodes reliability and trust. It spawns secrets, blackmail risk, and cycles of relapse that destabilize teams. Redemption arcs demand visible accountability; tragic arcs show how craving eclipses purpose."
+  },
+  {
+    "label": "Cowardice",
+    "description": "A pattern of avoiding risk or responsibility at others’ expense. It clashes with protector or justice motivations and creates harsh internal dissonance between self‑image and behavior. Courage becomes meaningful only once fear is acknowledged and acted through, not denied."
+  },
+  {
+    "label": "Perfectionism",
+    "description": "Standards so unforgiving that nothing ever ships. It masquerades as diligence while stifling collaboration and momentum, particularly in precision roles (engineer, judge, surgeon). The cure is learning that done, shared, and iterated beats immaculate but imaginary."
+  },
+  {
+    "label": "Paranoia",
+    "description": "Hypervigilance that reads threats into every shadow. Useful in espionage, it corrodes coalitions, making betrayal self‑fulfilling. The flaw resolves only when the character risks calibrated trust and tolerates uncertainty without control."
+  },
+  {
+    "label": "Fanaticism",
+    "description": "Zeal so rigid it justifies cruelty and refuses nuance. It hijacks noble motivations (faith, justice) and makes compromise impossible, pushing outcomes toward atrocity, martyrdom, or schism. Allies become heretics the moment they hesitate."
+  },
+  {
+    "label": "Nihilism",
+    "description": "The conviction that nothing matters, dissolving purpose and obligation. It breeds reckless risk or apathetic drift, sabotaging causes that need belief. The only escape is a chosen meaning—the decision to care despite cosmic indifference."
+  },
+  {
+    "label": "Jealousy",
+    "description": "Fear of losing love or status that provokes control, sabotage, and surveillance. It thrives in secrecy and scandal, corroding reputations and alliances. Only security earned through honesty—not possession—defuses it."
+  },
+  {
+    "label": "Vengefulness",
+    "description": "A compulsion to retaliate even when it harms one’s cause. It rots justice into vendetta and invites escalation traps set by canny antagonists. Resolution demands substituting reparation and prevention for pain‑for‑pain."
+  },
+  {
+    "label": "Control Fixation",
+    "description": "Micromanaging people and variables to fend off anxiety. Effective in crisis, it suffocates teams and successors in peacetime. Sustainable leadership requires letting others own outcomes and tolerating imperfect paths."
+  },
+  {
+    "label": "Compulsive Dishonesty",
+    "description": "Lying as default, until trust detonates irrevocably. It’s an asset in undercover work, poison everywhere else. The reckoning is necessarily public; rebuilding requires truth told at personal cost."
+  },
+  {
+    "label": "Prideful Honor",
+    "description": "A rigid code obeyed even when mercy would save lives. It is noble but brittle, pitting oath against compassion and turning the rulebook into the true antagonist. Growth reframes honor as protection of people, not procedures."
+  },
+  {
+    "label": "Ruthlessness",
+    "description": "Results‑only pragmatism that discards ethics and relationships. It wins battles while losing the war for the soul and the coalition; allies become assets, then casualties. The bill arrives as revolt, despair, or self‑recognition."
+  },
+  {
+    "label": "Impatience",
+    "description": "A refusal to wait that breaks plans and people. Urgency becomes recklessness; opportunities turn into crises. The lesson is cadence: fast where speed matters, slow where alignment prevents future fires."
+  },
+  {
+    "label": "Martyr Complex",
+    "description": "Compulsive self‑sacrifice that denies delegation, consent, and rest. It garners adoration but breeds dependency and burnout. True service includes longevity and teaching others to stand."
+  },
+  {
+    "label": "Savior Complex",
+    "description": "The need to fix everyone, even unasked, turning care into control. It erases agency in the name of love and collapses when a rescue fails. Healthy help requires boundaries and respect for refusal."
+  },
+  {
+    "label": "Rigidity",
+    "description": "Inability to adapt when facts or contexts change. It breaks in fluid environments and alienates flexible allies. Maturity appears when principles are kept but tactics bend."
+  },
+  {
+    "label": "Compulsive Secrecy",
+    "description": "Withholding information even from allies as a reflex. It multiplies paranoia, invites catastrophic unmasking, and enables the very betrayals it feared. Trustworthy governance requires sunlight by default, shadow by exception."
+  },
+  {
+    "label": "Escapism",
+    "description": "Habitual flight into fantasy, vice, or busyness to avoid pain. It buys short‑term relief while letting problems metastasize. The pivot is facing the wound, not outrunning it."
+  },
+  {
+    "label": "Workaholism",
+    "description": "Overuse of labor to dodge intimacy or grief. It wins reputation and revenue while hollowing health and home. Recovery means scheduling humanity, not just output."
+  },
+  {
+    "label": "Vanity",
+    "description": "Image over substance, inviting manipulation and scandal. It starves truth‑seeking motivations and hollows victory into spectacle. Humility—crediting others, welcoming critique—restores ballast."
+  },
+  {
+    "label": "Possessiveness",
+    "description": "Treating people as property in love or leadership. Loyalty becomes captivity; safety becomes surveillance. Release—trust freely given and revocable—proves love and earns allegiance."
+  },
+  {
+    "label": "Cynicism",
+    "description": "Chronic bad‑faith interpretation that preempts hope. It may protect from disappointment, but it kills coalition—the engine of any durable win. Courage is choosing optimism with eyes open."
+  },
+  {
+    "label": "Greed",
+    "description": "Overvaluing acquisition at ethical cost. It corrodes reputations and partnerships, making betrayal a business model. The arc turns when value broadens from owning to building."
+  },
+  {
+    "label": "Fatalism",
+    "description": "Surrender to “fate” that abdicates responsibility. It ensures missed chances for change and makes doom self‑fulfilling. Agency begins the moment the character acts anyway."
+  },
+  {
+    "label": "Self‑Loathing",
+    "description": "Internal contempt that repels help and sabotages success. It rewrites feedback as proof of worthlessness, not care. Healing requires being seen and accepted, then practicing competence."
+  },
+  {
+    "label": "Denial",
+    "description": "Refusal to face hard truths (illness, betrayal, limits). It delays action until options narrow to tragedy. The turn is naming reality aloud to allies who can help."
+  },
+  {
+    "label": "Imprudence",
+    "description": "Taking outsized risks without preparation. It flatters bravery while creating preventable disasters. Tempered risk—scoped, staged, insured—keeps valor from becoming vanity."
+  },
+  {
+    "label": "Manipulativeness",
+    "description": "Treating relationships as levers rather than bonds. It pays in short‑term wins and long‑term loneliness. Trust, once spent this way, is expensive to rebuy."
+  },
+  {
+    "label": "Short‑Sightedness",
+    "description": "Optimizing today while mortgaging tomorrow. It yields pyrrhic victories and strategic regret. The antidote is a horizon—legacy questions that shape choices."
+  },
+  {
+    "label": "Envy",
+    "description": "Resenting others’ success and turning collaboration into rivalry. It drains energy from building to tallying. Gratitude and distinctive goals blunt the poison."
+  },
+  {
+    "label": "Apathy",
+    "description": "Emotional disengagement that starves causes and people. It makes the character dead weight until shock or love reignites purpose. Commitment must be chosen, not drifted into."
+  },
+  {
+    "label": "Intransigence",
+    "description": "Refusal to negotiate even when interests align. It kills diplomatic paths and forces costly collisions. Strength is measured by outcomes, not obstinacy."
+  },
+  {
+    "label": "Cruelty",
+    "description": "Willingness to inflict pain for control or pleasure. It cements villainy and forecloses redemption. Empathy training is too late; only accountability constrains it."
+  },
+  {
+    "label": "Shame",
+    "description": "A belief in unworthiness that hides behind masks. It fuels secrets and isolation until witnessed and accepted. Self‑respect grows from kept promises, not perfection."
+  },
+  {
+    "label": "Jeer‑Driven Humor",
+    "description": "Barbed wit that keeps others at arm’s length. It wins laughs while hollowing trust. Vulnerability, not punchlines, builds intimacy."
+  },
+  {
+    "label": "Oath‑Bound Inflexibility",
+    "description": "Sacred promises obeyed despite changing contexts. Noble in intent, it pits loyalty against wisdom and often ends in sacrifice. Re‑oathing with nuance is the path forward."
+  },
+  {
+    "label": "Forbidden‑Knowledge Hunger",
+    "description": "Pursuit of truths that corrupt or endanger. It suits magicians and scholars and scales stakes to civilizations. Guardrails—purpose, peers, and pauses—keep curiosity from becoming catastrophe."
+  },
+  {
+    "label": "Complacency",
+    "description": "Comfort with the status quo that ignores rot. It resists necessary change until collapse forces it violently. Wakefulness restores stewardship before crisis."
+  },
+  {
+    "label": "Indecision",
+    "description": "Chronic hesitation that misses windows of opportunity. It drains confidence in leaders and lovers alike. Clarity of values makes decisive action possible."
+  },
+  {
+    "label": "Procrastination",
+    "description": "Delaying the hard work until crisis compresses choices. It forces shortcuts, invites error, and harms reputation for reliability. Systems beat willpower; build them."
+  },
+  {
+    "label": "Hedonism",
+    "description": "Pursuit of pleasure at the cost of duty. It jeopardizes protector or justice motivations and invites scandal. Integration—making space for joy without betrayal—matures desire."
+  },
+  {
+    "label": "People‑Pleasing",
+    "description": "Chasing approval over principle. It compromises strategy and self‑respect, and makes the character easy to capture socially. Saying no is a form of self‑definition."
+  },
+  {
+    "label": "Conflict Avoidance",
+    "description": "Fear of confrontation that lets problems metastasize. It sacrifices long‑term health for short‑term comfort. The first hard talk is the cheapest."
+  },
+  {
+    "label": "Overtrusting",
+    "description": "Granting confidence without verification. It invites infiltration and exploitation, especially against cunning antagonists. Trust is not a feeling; it’s a policy."
+  },
+  {
+    "label": "Tunnel Vision",
+    "description": "Fixation on one objective that misses flanking threats. It pairs poorly with strategist allies and ends in ambush. Widen the frame; add scouts."
+  },
+  {
+    "label": "Magical Thinking",
+    "description": "Preferring superstition or signs over evidence. It distorts decisions and empowers charlatans. Test, measure, and falsify—then believe."
+  },
+  {
+    "label": "Unexamined Traditionalism",
+    "description": "Clinging to inherited ways regardless of harm. It blocks reform arcs and marginalizes the vulnerable. Honor the roots by pruning the rot."
+  },
+  {
+    "label": "Risk Aversion",
+    "description": "Avoiding uncertainty so completely that opportunity never arrives. Security becomes a cage; the safest option is decay. Small, repeated bets rebuild courage."
+  },
+  {
+    "label": "Grandiosity",
+    "description": "Inflated belief in destiny or genius that demands exceptions. It treats others as extras in one’s story and brooks no limits. Humility is reality’s invitation to partnership."
+  },
+  {
+    "label": "Over‑Sanctimony",
+    "description": "Flaunting moral superiority to police others. It alienates allies and dares fate to expose hypocrisy. Quiet integrity persuades; posing repels."
+  },
+  {
+    "label": "Emotional Withholding",
+    "description": "Refusing to share feelings or needs. It starves intimacy and forces mind‑reading that always fails. Naming the need repairs the bond."
+  },
+  {
+    "label": "Suspicion",
+    "description": "Defaulting to ulterior‑motive assumptions. Prudence without warmth freezes coalitions. Assume goodwill until contradicted—then respond proportionally."
+  },
+  {
+    "label": "Masochism",
+    "description": "Seeking or tolerating suffering as proof of worth. It invites exploitation and confuses loyalty with self‑harm. Healthy love includes limits."
+  },
+  {
+    "label": "Opportunism",
+    "description": "Switching loyalties for advantage. It wins short‑term position and loses long‑term trust. Choose a hill and stand on it."
+  },
+  {
+    "label": "Impulsiveness",
+    "description": "Acting on feeling before thought. Sometimes brilliant, usually costly; the bill is paid in preventable harm. Insert pause rituals before plunges."
+  },
+  {
+    "label": "Guilt‑Fixation",
+    "description": "Compulsively self‑punishing for past harm. It blocks forward motion and rejects forgiveness offered. Making amends is action, not self‑erasure."
+  },
+  {
+    "label": "Isolationism",
+    "description": "Withdrawing from community to avoid vulnerability. It preserves safety while starving growth and insight. The right few allies beat perfect solitude."
+  },
+  {
+    "label": "Fickleness",
+    "description": "Rapid shifts in taste, allegiance, or mood. It creates chaos and makes promises meaningless. Consistency—kept small commitments—redeems volatility."
+  }
+]
