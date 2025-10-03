@@ -1,1 +1,162 @@
-[]
+[
+  {
+    "label": "Love",
+    "description": "Seeks to protect, unite with, or redeem someone. Collides with duty or ambition; destiny often tests the price of devotion."
+  },
+  {
+    "label": "Belonging",
+    "description": "Craves acceptance within a group or culture. Drives choices around reputation and secrecy; external conflict targets exclusion."
+  },
+  {
+    "label": "Freedom",
+    "description": "Pursues autonomy from control or circumstance. Aligns with rebel/outlaw roles; tests whether liberty is personal or collective."
+  },
+  {
+    "label": "Justice",
+    "description": "Aims to set wrongs right within a moral or legal frame. Pairs with judge/warrior; clashes with corrupt systems and personal vengeance."
+  },
+  {
+    "label": "Revenge",
+    "description": "Seeks payback for injury or loss. Fuels relentless plots but risks fatal flaws and tragic destinies."
+  },
+  {
+    "label": "Redemption",
+    "description": "Yearns to atone for past harm. Interlocks with backstory wounds; external trials offer proof of change."
+  },
+  {
+    "label": "Power",
+    "description": "Desires control over people, systems, or outcomes. Useful against chaos but corrupting when ends justify means."
+  },
+  {
+    "label": "Legacy",
+    "description": "Wants to be remembered or build enduring structures. Drives creator, ruler, visionary arcs; conflicts with short‑term mercy."
+  },
+  {
+    "label": "Survival",
+    "description": "Focuses on staying alive or keeping others alive. Clarifies stakes and justifies gray choices under pressure."
+  },
+  {
+    "label": "Discovery",
+    "description": "Pursues knowledge, lands, or truths. Fuels explorer/sage arcs; secrets and taboos are primary obstacles."
+  },
+  {
+    "label": "Mastery",
+    "description": "Seeks unparalleled skill in a domain. Supports magician/engineer arcs; risks obsession and isolation."
+  },
+  {
+    "label": "Order",
+    "description": "Desires stability and predictability. Pairs with ruler/judge; threatened by rebels and tricksters."
+  },
+  {
+    "label": "Chaos",
+    "description": "Embraces disruption to break stagnation. Catalyzes change but can leave ruin; asks what follows destruction."
+  },
+  {
+    "label": "Wealth",
+    "description": "Accumulates resources for status or security. Drives merchant arcs; conflicts with generosity and integrity."
+  },
+  {
+    "label": "Faith",
+    "description": "Pursues alignment with spiritual or philosophical truth. Interlocks with priest/prophet roles; doubt fuels internal conflict."
+  },
+  {
+    "label": "Truth",
+    "description": "Seeks reality behind appearances. Core for detectives; secrecy and propaganda are chief foes."
+  },
+  {
+    "label": "Protection",
+    "description": "Guards people, places, or ideals. Drives guardian arcs; destiny often tests what cannot be saved."
+  },
+  {
+    "label": "Ambition",
+    "description": "Climbs hierarchies to reach influence. Pairs with leader/strategist; risks betrayal and hollow victory."
+  },
+  {
+    "label": "Pleasure",
+    "description": "Chases sensory or aesthetic delight. Lightens tone but can shade into addiction or neglect."
+  },
+  {
+    "label": "Control",
+    "description": "Needs to manage variables to feel safe. Efficient in crises but stifling to others; pairs with anxiety."
+  },
+  {
+    "label": "Anarchy",
+    "description": "Abolishes imposed authority. Compatible with outlaw circles; destiny asks what fills the vacuum."
+  },
+  {
+    "label": "Equality",
+    "description": "Fights to level power imbalances. External conflict is systemic; reputation as radical or reformer follows."
+  },
+  {
+    "label": "Honor",
+    "description": "Upholds a code above convenience. Fuels knightly arcs; tragic when code clashes with compassion."
+  },
+  {
+    "label": "Curiosity",
+    "description": "Wants to know simply because not knowing itches. Lowers thresholds to risk; often triggers inciting incidents."
+  },
+  {
+    "label": "Protection of Nature",
+    "description": "Defends ecosystems or spirits. Aligns with ranger/druid; industrial or colonial forces oppose."
+  },
+  {
+    "label": "Progress",
+    "description": "Drives innovation and reform. Pairs with engineer/visionary; antagonized by tradition and fear."
+  },
+  {
+    "label": "Tradition",
+    "description": "Preserves ancestral ways and identities. Clashes with progress; origins and rituals become central stakes."
+  },
+  {
+    "label": "Reconciliation",
+    "description": "Seeks to mend broken relationships. Requires forgiveness and truth; reputations must be renegotiated."
+  },
+  {
+    "label": "Glory",
+    "description": "Craves recognition through deeds. Works for warriors and athletes; risks vanity and reckless feats."
+  },
+  {
+    "label": "Security",
+    "description": "Builds safety nets against threat. Motivates cautious strategies; can harden into xenophobia if warped by fear."
+  },
+  {
+    "label": "Transcendence",
+    "description": "Yearns to surpass human limits or ego. Powers mystic/artist/scientist arcs; dangers include cultism."
+  },
+  {
+    "label": "Revolution",
+    "description": "Aims to overturn an order entirely. Demands coalition and sacrifice; asks who becomes the new ruler."
+  },
+  {
+    "label": "Rescue",
+    "description": "Focuses on saving a person or group. Tight time frames amplify stakes; moral clarity is tested by costs."
+  },
+  {
+    "label": "Reputation",
+    "description": "Seeks honor, fame, or respect. Intertwines with image and secret shame; destiny can be hollow."
+  },
+  {
+    "label": "Balance",
+    "description": "Holds competing goods together. Diplomatic aim that risks paralysis; mastery of trade‑offs is key."
+  },
+  {
+    "label": "Healing",
+    "description": "Repairs harm to body, mind, or society. Combines well with caregiver; adversaries profit from ongoing wounds."
+  },
+  {
+    "label": "Justice tempered with Mercy",
+    "description": "Seeks right outcomes without cruelty. Difficult, nuanced aim that stresses internal conflict."
+  },
+  {
+    "label": "Belief in Others",
+    "description": "Works to unlock others’ potential. Ideal for mentors; reputation grows with their students."
+  },
+  {
+    "label": "Belief in Self",
+    "description": "Needs to prove worthiness. Drives everyman arcs; conflict centers on confidence vs. humility."
+  },
+  {
+    "label": "Unity",
+    "description": "Draws disparate factions together. External conflict is factionalism; secrets can shatter progress at any time."
+  }
+]

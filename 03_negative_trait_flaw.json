@@ -1,1 +1,278 @@
-[]
+[
+  {
+    "label": "Arrogant",
+    "description": "Inflates self‑worth and discounts others, provoking resistance and blinding strategy; disastrous in leadership and a straight path to hubristic downfall."
+  },
+  {
+    "label": "Cowardly",
+    "description": "Avoids danger at any cost, undermining trust and forcing others to carry risk; acute internal conflict when love or duty demands courage."
+  },
+  {
+    "label": "Reckless",
+    "description": "Acts without weighing consequences, producing pyrrhic wins and needless losses; escalates external conflict unnecessarily."
+  },
+  {
+    "label": "Manipulative",
+    "description": "Engineers outcomes by exploiting people; useful in intrigue yet corrodes relationships and reputation, and invites retaliation."
+  },
+  {
+    "label": "Vindictive",
+    "description": "Pursues payback at the expense of all else, warping motivation and endangering allies; trajectory leans tragic unless forgiveness intervenes."
+  },
+  {
+    "label": "Jealous",
+    "description": "Fears loss of affection or status, breeding sabotage and deceit; often triggered by secrets and inflamed by shifting reputations."
+  },
+  {
+    "label": "Deceitful",
+    "description": "Habitually lies, fracturing trust; advantageous in covert roles but lethal to cohesion when revealed."
+  },
+  {
+    "label": "Greedy",
+    "description": "Overvalues acquisition, compromising ethics and alliances; external conflicts over resources intensify while inner emptiness persists."
+  },
+  {
+    "label": "Dogmatic",
+    "description": "Clings to doctrine despite evidence, producing brittle decisions; collides with open‑minded teammates and adaptive strategy."
+  },
+  {
+    "label": "Intemperate",
+    "description": "Lacks moderation (anger, lust, spending), inviting scandal and blackmail; easily exploited by adversaries."
+  },
+  {
+    "label": "Impulsive",
+    "description": "Jumps to action on emotion, bypassing planning; occasional brilliance but frequent collateral damage."
+  },
+  {
+    "label": "Pessimistic",
+    "description": "Expects the worst, sapping morale and missing opportunities; can become a self‑fulfilling filter."
+  },
+  {
+    "label": "Perfectionist",
+    "description": "Sets unattainable standards that stall progress and erode teams; toxic when paired with creator/engineer roles."
+  },
+  {
+    "label": "Callous",
+    "description": "Numbs empathy, enabling cruelty or neglect; effective in brutal settings but reputationally radioactive."
+  },
+  {
+    "label": "Hypocritical",
+    "description": "Preaches values they won’t practice; credibility detonates when secrets surface—devastating for moral authorities."
+  },
+  {
+    "label": "Envious",
+    "description": "Covets others’ success, turning collaboration into rivalry; may spur growth but often curdles into sabotage."
+  },
+  {
+    "label": "Naïve",
+    "description": "Misreads danger and manipulation, risking self and group; transitional flaw for coming‑of‑age arcs."
+  },
+  {
+    "label": "Apathetic",
+    "description": "Lacks concern or motivation, stalling plots until external pressure forces movement; corrosive to teams."
+  },
+  {
+    "label": "Cynical",
+    "description": "Assumes bad faith, poisoning trust; sometimes sharpens analysis, often blocks alliances crucial to victory."
+  },
+  {
+    "label": "Stubborn",
+    "description": "Refuses to shift stance despite new data; steady under fire but brittle when wrong, endangering outcomes."
+  },
+  {
+    "label": "Overbearing",
+    "description": "Dominates and micromanages, suffocating initiative; especially harmful in leadership roles."
+  },
+  {
+    "label": "Paranoid",
+    "description": "Sees threats everywhere, creating self‑fulfilling betrayals; espionage arcs intensify this flaw."
+  },
+  {
+    "label": "Vain",
+    "description": "Seeks admiration over substance, misallocating effort and exposing to manipulation; reputation obsession eclipses stakes."
+  },
+  {
+    "label": "Indecisive",
+    "description": "Delays commitment, missing windows of opportunity; breeds frustration in crises."
+  },
+  {
+    "label": "Ruthless",
+    "description": "Discards ethics to achieve goals; effective against monsters and tyrants at severe cost to soul and team."
+  },
+  {
+    "label": "Gullible",
+    "description": "Over‑trusts appearances, becoming a gateway for antagonist plots; crippling for investigators."
+  },
+  {
+    "label": "Spiteful",
+    "description": "Harms others even at own cost; escalates petty wars that distract from main conflicts."
+  },
+  {
+    "label": "Obsessive",
+    "description": "Fixates on one aim, corroding health and relationships; can deliver breakthroughs at catastrophic price."
+  },
+  {
+    "label": "Miserly",
+    "description": "Hoarder of resources, eroding goodwill and resilience; backfires in crises requiring mutual aid."
+  },
+  {
+    "label": "Bigoted",
+    "description": "Devalues groups by identity, destroying alliances and legitimacy; opposition will organize against it."
+  },
+  {
+    "label": "Fanatical",
+    "description": "Pursues belief with absolute zeal, immune to compromise; powerful in movements but prone to atrocity."
+  },
+  {
+    "label": "Lazy",
+    "description": "Avoids exertion, shifting burdens to others; untenable in high‑stakes arcs and forces reckonings."
+  },
+  {
+    "label": "Masochistic",
+    "description": "Seeks or tolerates suffering, confusing loyalty with self‑harm; invites exploitation by antagonists."
+  },
+  {
+    "label": "Martinet",
+    "description": "Enforces rules without judgment, crushing morale; brittle in fluid battlefields and negotiations."
+  },
+  {
+    "label": "Petty",
+    "description": "Fixates on small slights, derailing strategy over trivialities; reputationally corrosive."
+  },
+  {
+    "label": "Resentful",
+    "description": "Nurtures grudges that warp teamwork; easily weaponized by savvy antagonists."
+  },
+  {
+    "label": "Secretive",
+    "description": "Withholds information reflexively, even when trust would serve; amplifies paranoia and fractures teams."
+  },
+  {
+    "label": "Short‑tempered",
+    "description": "Flashes to anger, turning sparks into fires; highly exploitable via provocation."
+  },
+  {
+    "label": "Superstitious",
+    "description": "Misattributes causes and seeks magical fixes, sabotaging rational plans; manipulable by charlatans."
+  },
+  {
+    "label": "Two‑faced",
+    "description": "Performs different selves for different audiences beyond healthy code‑switching; exposure destroys reputation."
+  },
+  {
+    "label": "Wasteful",
+    "description": "Burns resources imprudently, weakening long‑term position; often paired with vanity or impulsiveness."
+  },
+  {
+    "label": "Withdrawn",
+    "description": "Retreats from engagement, starving teams of input and bonding; sometimes a trauma shield that must be healed."
+  },
+  {
+    "label": "Workaholic",
+    "description": "Overworks to avoid feelings, eroding judgment and relationships; appears virtuous until collapse."
+  },
+  {
+    "label": "Anxious",
+    "description": "Anticipates catastrophe, impairing performance; sharpens preparation only when channeled."
+  },
+  {
+    "label": "Cruel",
+    "description": "Inflicts pain for control or amusement; cements villain status and forecloses redemption arcs."
+  },
+  {
+    "label": "Delusional",
+    "description": "Clings to false beliefs, becoming dangerous and unpredictable; secrets and reputations destabilize around them."
+  },
+  {
+    "label": "Dishonorable",
+    "description": "Breaks oaths lightly, destroying legitimacy; social death in oath‑bound cultures."
+  },
+  {
+    "label": "Egotistical",
+    "description": "Centers self in all narratives; impossible collaborator unless humbled by events."
+  },
+  {
+    "label": "Fickle",
+    "description": "Shifts allegiance or taste rapidly, creating chaos; unreliable in critical arcs."
+  },
+  {
+    "label": "Gloomy",
+    "description": "Radiates despair that demoralizes allies; occasionally accurate in horror, usually harmful to cohesion."
+  },
+  {
+    "label": "Hard‑hearted",
+    "description": "Rejects appeals to mercy, making negotiations brittle; simplifies choices at the cost of humanity."
+  },
+  {
+    "label": "Hot‑headed",
+    "description": "Rushes into fights, predictable and provokable; handy for enemies to bait."
+  },
+  {
+    "label": "Hypercritical",
+    "description": "Nitpicks and demeans, stifling creativity; undermines creators and innovators."
+  },
+  {
+    "label": "Ignorant",
+    "description": "Lacks essential knowledge and resists learning; survivable if humble, deadly if proud."
+  },
+  {
+    "label": "Impish",
+    "description": "Mischief without wisdom, burning bridges for laughs; fun at low stakes, fatal at high."
+  },
+  {
+    "label": "Inflexible",
+    "description": "Cannot adapt, breaking under novelty; defeats even brilliant strategies from the inside."
+  },
+  {
+    "label": "Insensitive",
+    "description": "Misses emotional cues, harming relationships; fixable with awareness, damaging when denied."
+  },
+  {
+    "label": "Intolerant",
+    "description": "Cannot abide difference; collapses coalitions and invites righteous opposition."
+  },
+  {
+    "label": "Irresponsible",
+    "description": "Evades accountability, breeding chaos; adversaries exploit the blame vacuum."
+  },
+  {
+    "label": "Melodramatic",
+    "description": "Inflates events for attention, distracting from substance; reputationally undermining."
+  },
+  {
+    "label": "Negligent",
+    "description": "Fails duties through inattention; devastating in guardian/healer roles."
+  },
+  {
+    "label": "Prideful",
+    "description": "Rejects help and feedback; the classical path to downfall absent humility."
+  },
+  {
+    "label": "Reclusive",
+    "description": "Hides from community, starving self of support; sometimes necessary in fugitive arcs, often isolating."
+  },
+  {
+    "label": "Sanctimonious",
+    "description": "Flaunts moral superiority; alienates allies and invites tests that expose hypocrisy."
+  },
+  {
+    "label": "Self‑pitying",
+    "description": "Fixates on own suffering; drains teams and stalls growth until reframed."
+  },
+  {
+    "label": "Scheming",
+    "description": "Plots constantly, treating people as pieces; brilliant in court politics, ruinous for trust."
+  },
+  {
+    "label": "Suspicious",
+    "description": "Assumes ulterior motives, blocking coalition; prudent in espionage, corrosive elsewhere."
+  },
+  {
+    "label": "Thuggish",
+    "description": "Uses intimidation by default; effective short‑term, strategic dead‑end long‑term."
+  },
+  {
+    "label": "Waste‑averse",
+    "description": "Hoarding to a fault, missing opportunities that require investment; equal and opposite failure to wastefulness."
+  }
+]
