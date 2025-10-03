@@ -17,11 +17,11 @@
   },
   {
     "label": "Revenge",
-    "description": "Seeks payback for injury or loss. Fuels relentless plots but risks fatal flaws and tragic destinies."
+    "description": "Seeks payback for injury or loss. Fuels relentless plots but risks fatal flaws (vindictiveness) and tragic destinies."
   },
   {
     "label": "Redemption",
-    "description": "Yearns to atone for past harm. Interlocks with backstory wounds; external trials offer proof of change."
+    "description": "Yearns to atone for past harm. Interlocks with backstory catalysts; external trials offer proof of change."
   },
   {
     "label": "Power",
@@ -29,15 +29,15 @@
   },
   {
     "label": "Legacy",
-    "description": "Wants to be remembered or build enduring structures. Drives creator, ruler, visionary arcs; conflicts with short‑term mercy."
+    "description": "Wants to be remembered or to build enduring structures. Drives creator, ruler, visionary arcs; conflicts with short‑term mercy."
   },
   {
     "label": "Survival",
-    "description": "Focuses on staying alive or keeping others alive. Clarifies stakes and justifies gray choices under pressure."
+    "description": "Focuses on staying alive or keeping others alive. Clarifies stakes and justifies morally gray choices under pressure."
   },
   {
     "label": "Discovery",
-    "description": "Pursues knowledge, lands, or truths. Fuels explorer/sage arcs; secrets and taboos are primary obstacles."
+    "description": "Pursues knowledge, lands, or truths. Fuels explorer/sage arcs; secrets and taboos are central obstacles."
   },
   {
     "label": "Mastery",
@@ -49,19 +49,19 @@
   },
   {
     "label": "Chaos",
-    "description": "Embraces disruption to break stagnation. Catalyzes change but can leave ruin; asks what follows destruction."
+    "description": "Embraces disruption to break stagnation. Catalyzes change but can leave ruin; tests whether creation follows destruction."
   },
   {
     "label": "Wealth",
-    "description": "Accumulates resources for status or security. Drives merchant arcs; conflicts with generosity and integrity."
+    "description": "Accumulates resources to enable status or security. Drives merchant arcs; conflicts with generosity and integrity."
   },
   {
     "label": "Faith",
-    "description": "Pursues alignment with spiritual or philosophical truth. Interlocks with priest/prophet roles; doubt fuels internal conflict."
+    "description": "Pursues alignment with a spiritual or philosophical truth. Interlocks with priest/prophet roles; heresy and doubt fuel internal conflict."
   },
   {
     "label": "Truth",
-    "description": "Seeks reality behind appearances. Core for detectives; secrecy and propaganda are chief foes."
+    "description": "Seeks reality behind appearances. Core for detectives; secrecy and propaganda are primary foes."
   },
   {
     "label": "Protection",
@@ -81,7 +81,7 @@
   },
   {
     "label": "Anarchy",
-    "description": "Abolishes imposed authority. Compatible with outlaw circles; destiny asks what fills the vacuum."
+    "description": "Seeks to abolish imposed authority. Compatible with outlaw circles; destiny asks what fills the vacuum."
   },
   {
     "label": "Equality",
@@ -89,15 +89,15 @@
   },
   {
     "label": "Honor",
-    "description": "Upholds a code above convenience. Fuels knightly arcs; tragic when code clashes with compassion."
+    "description": "Upholds a code above convenience. Fuels warrior/knight arcs; tragic when code clashes with compassion."
   },
   {
     "label": "Curiosity",
-    "description": "Wants to know simply because not knowing itches. Lowers thresholds to risk; often triggers inciting incidents."
+    "description": "Wants to know simply because not knowing itches. Lowers thresholds to risk; often triggers plot inciting incidents."
   },
   {
     "label": "Protection of Nature",
-    "description": "Defends ecosystems or spirits. Aligns with ranger/druid; industrial or colonial forces oppose."
+    "description": "Defends ecosystems or spirits. Aligns with ranger/druid archetypes; industrial external conflicts loom."
   },
   {
     "label": "Progress",
@@ -105,11 +105,11 @@
   },
   {
     "label": "Tradition",
-    "description": "Preserves ancestral ways and identities. Clashes with progress; origins and rituals become central stakes."
+    "description": "Preserves ancestral ways and identities. Clashes with progress; secrets of origin become central stakes."
   },
   {
     "label": "Reconciliation",
-    "description": "Seeks to mend broken relationships. Requires forgiveness and truth; reputations must be renegotiated."
+    "description": "Seeks to mend broken relationships. Relies on forgiveness and truth; reputations must be renegotiated."
   },
   {
     "label": "Glory",
@@ -121,11 +121,11 @@
   },
   {
     "label": "Transcendence",
-    "description": "Yearns to surpass human limits or ego. Powers mystic/artist/scientist arcs; dangers include cultism."
+    "description": "Yearns to surpass human limits or ego. Powers mystic, artist, and scientist arcs; dangers include cultism."
   },
   {
     "label": "Revolution",
-    "description": "Aims to overturn an order entirely. Demands coalition and sacrifice; asks who becomes the new ruler."
+    "description": "Aims to overturn an order entirely. Demands coalition and sacrifice; destiny asks who becomes the new ruler."
   },
   {
     "label": "Rescue",
@@ -133,19 +133,19 @@
   },
   {
     "label": "Reputation",
-    "description": "Seeks honor, fame, or respect. Intertwines with image and secret shame; destiny can be hollow."
+    "description": "Seeks honor, fame, or respect. Intertwines with external image and secret shame; destiny can be hollow."
   },
   {
     "label": "Balance",
-    "description": "Holds competing goods together. Diplomatic aim that risks paralysis; mastery of trade‑offs is key."
+    "description": "Tries to hold competing goods together. Diplomatic motivation that risks paralysis; mastery of trade‑offs is key."
   },
   {
     "label": "Healing",
-    "description": "Repairs harm to body, mind, or society. Combines well with caregiver; adversaries profit from ongoing wounds."
+    "description": "Repairs harm to body, mind, or society. Combines well with caregiver; external forces profit from continued wounds."
   },
   {
-    "label": "Justice tempered with Mercy",
-    "description": "Seeks right outcomes without cruelty. Difficult, nuanced aim that stresses internal conflict."
+    "label": "Justice‑tempered‑with‑Mercy",
+    "description": "Seeks right outcomes without cruelty. A difficult, nuanced aim that stresses internal conflict."
   },
   {
     "label": "Belief in Others",
@@ -153,10 +153,10 @@
   },
   {
     "label": "Belief in Self",
-    "description": "Needs to prove worthiness. Drives everyman arcs; conflict centers on confidence vs. humility."
+    "description": "Needs to prove worthiness. Drives everyman arcs; internal conflict centers on confidence vs. humility."
   },
   {
     "label": "Unity",
-    "description": "Draws disparate factions together. External conflict is factionalism; secrets can shatter progress at any time."
+    "description": "Strives to draw disparate factions together. External conflict is factionalism; secrets can shatter progress at any time."
   }
 ]

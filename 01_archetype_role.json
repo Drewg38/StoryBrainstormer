@@ -1,162 +1,162 @@
 [
   {
     "label": "Hero",
-    "description": "A protagonist who accepts responsibility for others and the outcome of their world. Often paired with courage or discipline, yet vulnerable to fatal flaws like hubris. Reputation may be heroic while a destabilizing secret tests whether self‑interest or the greater good wins."
+    "description": "A protagonist who accepts responsibility for others and the outcome of the world around them. Pairs cleanly with positive traits like courage or discipline, but can be undercut by fatal flaws such as hubris. A heroic reputation may conceal a destabilizing secret; destiny often tests whether the hero sacrifices self-interest for the larger good."
   },
   {
     "label": "Antihero",
-    "description": "A central figure whose methods or ethics are compromised but whose goals still matter. Generates strong internal conflict (duty vs. desire) and usually carries a painful backstory; destiny skews bittersweet and reputation swings between infamous and indispensable."
+    "description": "A central character whose ethics or methods are compromised, yet who pursues a goal the audience cares about. Antiheroes generate potent internal conflict (duty vs. desire) and often carry heavy backstory wounds. Destiny tends to be bittersweet; reputation swings between infamous and indispensable."
   },
   {
     "label": "Mentor",
-    "description": "A guide whose wisdom accelerates a protagonist’s growth. Their authority stems from occupation (scholar, veteran, mystic); a hidden failing or past error can pivot mid‑plot and force the pupil to stand alone."
+    "description": "A guide whose wisdom accelerates the protagonist’s growth. Their occupation (scholar, veteran, mystic) frames their authority; motivation may be redemption for past failures. A mentor’s secret or failing can turn mid-plot, transforming external conflict and forcing the pupil to stand alone."
   },
   {
     "label": "Trickster",
-    "description": "A disruptor who breaks rules and exposes hypocrisy. Positive wit clashes with impulsiveness; secrets are weapons. Destiny tends toward irony as reputation toggles between clown and genius."
+    "description": "A disruptor who breaks rules, exposes hypocrisy, and catalyzes change. Tricksters work best when their positive trait (wit) clashes with a negative trait (impulsiveness). Their destiny is often ironic; reputation toggles between clown and genius, and secrets are weapons."
   },
   {
     "label": "Caregiver",
-    "description": "A protector who prioritizes others’ well‑being. Motivated by love or duty; common fatal flaws include self‑neglect or martyrdom. Occupations like healer or teacher provide practical stakes under external pressure."
+    "description": "A protector who prioritizes the well-being of others. Motivation commonly arises from love or duty; fatal flaws include self-neglect or martyrdom. Their occupation (healer, teacher, guardian) gives practical stakes; external conflict tests boundaries of compassion."
   },
   {
     "label": "Ruler",
-    "description": "A power‑holder balancing stability and justice. Driven by legacy or control, with pride as a classic flaw. Reputation becomes political currency while succession secrets and coups reshape destiny."
+    "description": "A power-holder who must balance stability and justice. Motivation often centers on legacy or control; the fatal flaw is frequently pride. Reputation becomes a political currency; secrets (illegitimate heir, coup) reshape destiny and drive systemic external conflict."
   },
   {
     "label": "Rebel",
-    "description": "Challenges norms and oppression. Motivations of freedom or justice align with external conflicts against authority; bravery collides with recklessness and destiny arcs from reluctant leader to tragic martyr."
+    "description": "A challenger of norms and oppressive systems. Motivation (freedom, justice) aligns with external conflict against authority. Positive traits (bravery) collide with negative ones (recklessness). Destiny arcs from insurgent to reluctant leader—or to tragic martyr."
   },
   {
     "label": "Sage",
-    "description": "Seeker of knowledge and meaning. Occupations (scholar, oracle) tie to curiosity; flaws include detachment or arrogance. Forbidden knowledge as a secret can raise catastrophic stakes and force action."
+    "description": "A seeker of knowledge and meaning. Their occupation (scholar, oracle) ties to curiosity as motivation; flaws include detachment or arrogance. Secrets (forbidden knowledge) can create catastrophic external stakes; destiny often tests whether wisdom yields action."
   },
   {
     "label": "Innocent",
-    "description": "Defined by purity, hope, or naïveté. Trust and optimism invite empathy while gullibility creates danger. Destiny often explores coming‑of‑age as reputation shifts from sheltered to symbol."
+    "description": "A character defined by purity, hope, or naiveté. Positive traits (trust, optimism) invite audience empathy; flaws (gullibility) create vulnerability. Destiny frequently explores coming-of-age; reputation may shift from sheltered to symbol."
   },
   {
     "label": "Explorer",
-    "description": "Driven to cross boundaries—geographic, social, or intellectual. Discovery and freedom clash with external constraints; resourcefulness offsets restlessness. Backstories often feature confining origins."
+    "description": "One driven to cross boundaries—geographic, social, or intellectual. Motivation (discovery, freedom) clashes with external constraints; positive traits (resourcefulness) are tempered by flaws (restlessness). Backstory often includes a confining origin."
   },
   {
     "label": "Everyman",
-    "description": "An ordinary person thrust into extraordinary stakes. Relatable strengths like resilience fight self‑doubt. Reputation begins low and transforms as common virtue meets uncommon pressure."
+    "description": "An ordinary person thrust into extraordinary circumstances. Strengths include resilience and relatability; flaws often involve self-doubt. Reputation starts low but can transform; destiny examines how common virtue meets uncommon pressure."
   },
   {
     "label": "Lover",
-    "description": "Seeks connection and union. Devotion collides with duty or ambition; fatal flaws include jealousy or idealization. Secrets like forbidden love can dominate social stakes and reputation."
+    "description": "One who seeks connection, intimacy, or union. Motivation (belonging, devotion) collides with duty or ambition. Fatal flaws include jealousy or idealization. Secrets (forbidden love) and reputations (scandalous vs. steadfast) drive social stakes."
   },
   {
     "label": "Creator",
-    "description": "An innovator who brings new things into being. Motivation for legacy or expression meets external resistance (patronage, censorship). Flaws like perfectionism risk sacrificing relationships."
+    "description": "An innovator who brings new things into being. Motivation (legacy, expression) meets external resistance (patronage, censorship). Flaws include obsession or perfectionism; destiny often weighs art against relationships."
   },
   {
     "label": "Magician",
-    "description": "A transformer who bends reality or systems. Motivated by mastery or healing but prone to control and hubris. Taboo rites as secrets and heretic/savior reputations shape rise or fall."
+    "description": "A transformer who bends reality or systems. Motivation (mastery, healing) can veer into control; fatal flaw is hubris. Secrets (taboo rites) and reputation (savior vs. heretic) shape their rise or fall."
   },
   {
     "label": "Jester",
-    "description": "A truth‑teller cloaked in humor. Levity and social intelligence can mask fear or avoidance. Destiny hinges on whether laughter disarms tyranny or trivializes danger."
+    "description": "A truth-teller cloaked in humor. Positive traits (levity, social intelligence) mask fear or avoidance. Their destiny hinges on whether laughter disarms tyranny or trivializes danger; reputations are volatile but powerful."
   },
   {
     "label": "Warrior",
-    "description": "Solves problems through force and discipline. Honor or protection motivates; rigidity or anger creates internal battles. Destiny questions what is worth fighting for."
+    "description": "A combatant who solves problems through force and discipline. Motivation (honor, protection) pairs with occupations (soldier, guard). Flaws (rigidity, anger) invite internal battles; destiny questions what is worth fighting for."
   },
   {
     "label": "Healer",
-    "description": "Restores bodies, minds, or systems. Mercy clashes with scarcity or corruption; flaws include savior complex or burnout. Illicit methods as secrets test reputation and ethics."
+    "description": "A restorer of bodies, minds, or systems. Motivation (mercy) clashes with scarcity or corruption. Flaws include savior complex or burnout; secrets (illicit methods) test reputation and ethical lines."
   },
   {
     "label": "Guardian",
-    "description": "A sentinel bound to a person, place, or vow. Duty competes with desire; sacrifice haunts destiny. External conflict places them at choke points; loyalty defines internal struggle."
+    "description": "A sentinel bound to a person, place, or vow. Motivation (duty) competes with desire; destiny often involves sacrifice. External conflict places them at choke points; internal conflict examines where loyalty ends."
   },
   {
     "label": "Outlaw",
-    "description": "A lawbreaker by necessity or conviction. Seeks freedom or survival while opposing institutions; infamous reputation may hide a code. Cynicism tempts tragic outcomes."
+    "description": "A lawbreaker by necessity or conviction. Motivation (freedom, survival) opposes institutions; reputation (infamous) may conceal a personal code. Fatal flaws include cynicism; destiny toggles between folk hero and felon."
   },
   {
     "label": "Detective",
-    "description": "A pattern‑breaker who solves mysteries. Pursues truth and justice under pressure from secrecy and corruption. Obsession strains relationships; credibility binds occupation and reputation."
+    "description": "A solver of mysteries and pattern-breaker. Motivation (truth, justice) is pressured by secrets and corruption. Flaws (obsession) can destroy relationships; occupation and reputation intertwine with credibility."
   },
   {
     "label": "Scholar",
-    "description": "A theorist whose weapon is understanding. Curiosity conflicts with action; paralysis by analysis is a risk. Lost texts and hidden data turn knowledge into plot‑level stakes."
+    "description": "A theorist whose weapon is understanding. Motivation (curiosity) can conflict with action; flaw (paralysis by analysis). Secrets (lost texts) create external stakes; destiny tests whether knowledge changes the world."
   },
   {
     "label": "Artist",
-    "description": "A shaper of culture and emotion. Expression collides with patronage and poverty; volatility or narcissism may sabotage ties. Reputation swings can make or break careers."
+    "description": "A shaper of culture and emotion. Motivation (expression, meaning) collides with patronage or poverty. Flaws include narcissism or volatility; reputation can swing wildly and affect all relationships."
   },
   {
     "label": "Priest/Cleric",
-    "description": "Mediator between people and the sacred. Service and order meet politics and heresy; fanaticism or hypocrisy are explosive flaws. Institutional secrets can topple regimes."
+    "description": "A mediator between people and the sacred. Motivation (service, order) meets external conflict (heresy, politics). Fatal flaws (fanaticism, hypocrisy) are explosive; secrets can topple institutions."
   },
   {
     "label": "Merchant",
-    "description": "Broker of value and networks. Wealth or influence motivate; avarice erodes trust. Reputation and secret deals define external stakes in markets and courts alike."
+    "description": "A broker of value and networks. Motivation (wealth, influence) intersects with diplomacy. Flaws (avarice) threaten trust; reputation and secret deals define external stakes."
   },
   {
     "label": "Leader",
-    "description": "Coordinates people and strategy without sovereign title. Seeks impact but may over‑control; destiny tests whether they build community or cult."
+    "description": "A coordinator of people and strategy without sovereign power. Motivation (impact) and flaw (control) contest; destiny examines whether the leader builds community or cult."
   },
   {
     "label": "Strategist",
-    "description": "Wins through foresight and systems thinking. Craves elegant solutions; coldness strains relationships. Misreading secrets or reputations collapses intricate plans."
+    "description": "A planner who wins by foresight. Motivation (elegant solutions) clashes with chaos; flaw (coldness) strains relationships. Their fate depends on reading secrets and reputations correctly."
   },
   {
     "label": "Diplomat",
-    "description": "Bridge‑builder across factions. Pursues peace or leverage in negotiation arenas; appeasement can backfire and secrets ruin credibility."
+    "description": "A bridge-builder across factions. Motivation (peace, leverage) meets external conflict in negotiation arenas. Flaws (appeasement) can backfire; secrets ruin credibility."
   },
   {
     "label": "Spy",
-    "description": "Lives in ambiguity to gather secrets. Motivation (cause or survival) entangles with identity; duplicity fatigue is common and destiny forces a choice between truth and self."
+    "description": "A gatherer of secrets who lives in ambiguity. Motivation (country, cause, survival) entangles with identity. Fatal flaws include duplicity fatigue; destiny often forces a choice between truth and self."
   },
   {
     "label": "Assassin",
-    "description": "Professional killer with a code or cause. Justice or coin collides with conscience; desensitization or remorse drives internal collapse. Reputation is precise, fearsome, isolating."
+    "description": "A professional killer with a code or cause. Motivation (justice, coin) collides with conscience; fatal flaws (desensitization, remorse) drive internal collapse. Reputation is precise, fearsome, isolating."
   },
   {
     "label": "Thief",
-    "description": "Infiltrator who redistributes or hoards. Liberation, thrill, or need clash with law and trust. Greed and compulsion are common risks; true loyalties stay hidden."
+    "description": "An infiltrator who redistributes or hoards. Motivation (liberation, thrill, need) clashes with law and trust. Flaws (greed, compulsion) are common; secrets (who they really steal for) matter."
   },
   {
     "label": "Ranger/Tracker",
-    "description": "Solitary scout between wild and civilized. Stewardship and freedom meet threats from nature and encroachment; isolation limits bonds and destiny weighs wilderness vs. belonging."
+    "description": "A solitary scout between wild and civilized. Motivation (stewardship, freedom) meets external threats from nature or encroachment. Flaws (isolation) limit bonds; destiny weighs wilderness against belonging."
   },
   {
     "label": "Judge",
-    "description": "Arbiter of law and fairness. Justice collides with politics; rigidity or bias complicate verdicts. Tainted secrets delegitimize entire systems."
+    "description": "An arbiter of law and fairness. Motivation (justice) collides with politics; flaw (rigidity, bias) complicates cases. Secrets taint verdicts; reputation can legitimize or delegitimize entire systems."
   },
   {
     "label": "Visionary",
-    "description": "Future‑oriented catalyst who sees possibilities. Transformation fights inertia; grandiosity risks collapse. Fate measures whether vision becomes movement or madness."
+    "description": "A future-oriented catalyst who sees possibilities. Motivation (transformation) fights inertia; flaw (grandiosity) risks collapse. Destiny measures whether vision becomes cult, movement, or madness."
   },
   {
     "label": "Engineer/Tinkerer",
-    "description": "Builds mechanisms and processes to solve problems. Efficiency and curiosity meet resource limits; tunnel vision risks harm. Dangerous prototypes make secrets volatile."
+    "description": "A problem-solver who builds mechanisms and processes. Motivation (efficiency, curiosity) meets resource limits; flaw (tunnel vision) risks harm. Secrets (dangerous prototypes) escalate stakes."
   },
   {
     "label": "Pirate",
-    "description": "Raider outside legal orders. Plunder, freedom, or revenge fuel conflict with navies and merchants; mutiny shadows destiny and a fearsome reputation both attracts and imperils crews."
+    "description": "A raider outside legal orders. Motivation (plunder, freedom, revenge) clashes with navies and merchants. Fatal flaw (mutiny bait) haunts them; reputation both attracts and imperils crews."
   },
   {
     "label": "Nomad",
-    "description": "Mover who resists roots. Freedom or survival confronts pressures to settle; restlessness sabotages ties. Destiny asks whether home is a place or a path."
+    "description": "A mover who resists roots. Motivation (freedom, survival) meets external pressures to settle; flaw (restlessness) sabotages relationships. Destiny questions whether home is a place or a path."
   },
   {
     "label": "Prophet/Seer",
-    "description": "Bearer of visions or warnings. Truth meets disbelief; certainty alienates allies. Misread omens as secrets can doom many."
+    "description": "A bearer of messages or visions. Motivation (truth, warning) collides with disbelief; fatal flaw (certainty) alienates allies. Secrets (misread omens) can doom many."
   },
   {
     "label": "Alchemist",
-    "description": "Seeks transformation through experiment and synthesis. Perfection edges toward obsession; forbidden methods escalate peril. Destiny balances discovery against cost."
+    "description": "A synthesizer who seeks transformation through experiment. Motivation (perfection) edges toward obsession; secrets (forbidden methods) create peril. Destiny balances discovery and cost."
   },
   {
     "label": "Bard",
-    "description": "Storyteller whose voice shapes memory and morale. Legacy or influence meets censorship; embellishment erodes trust. Reputation is currency on every road."
+    "description": "A storyteller whose voice shapes memory and morale. Motivation (legacy, influence) meets censorship or patronage. Flaw (embellishment) undermines trust; reputation is their currency."
   },
   {
     "label": "Witch/Warlock",
-    "description": "Liminal practitioner bound to hidden powers. Power or protection collides with fear and persecution; bargains and corruption threaten existentially while secrecy defines survival."
+    "description": "A liminal practitioner bound to hidden powers. Motivation (power, protection) collides with fear and persecution. Fatal flaws (bargains, corruption) are existential; secrets define survival."
   }
 ]

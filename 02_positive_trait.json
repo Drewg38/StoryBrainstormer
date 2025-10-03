@@ -1,83 +1,83 @@
 [
   {
     "label": "Courageous",
-    "description": "Acts despite fear, enabling decisive moves when stakes are high. Pairs with warrior or rebel archetypes; counters internal doubt and can rehabilitate damaged reputations."
+    "description": "Acts despite fear, enabling decisive moves when stakes are high. Pairs with warrior or rebel archetypes; offsets reputational damage and counters internal conflict rooted in doubt."
   },
   {
     "label": "Compassionate",
-    "description": "Feels and responds to others’ suffering. Supports caregiver/healer roles and can temper harsher motivations like revenge by reframing goals toward protection or mercy."
+    "description": "Feels and responds to others’ suffering. Supports caregiver/healer roles and can temper harsher motivations (revenge) by reframing goals toward protection or mercy."
   },
   {
     "label": "Loyal",
-    "description": "Prioritizes commitments to people or causes. Interlocks with destiny (oaths imply sacrifice) and conflicts with occupations that require duplicity such as espionage."
+    "description": "Prioritizes commitment to people or causes. Interlocks with destiny (oaths lead to sacrifice) and can conflict with secrets or occupations requiring duplicity (spy, diplomat)."
   },
   {
     "label": "Honest",
-    "description": "Values truth even at cost. Creates friction with covert roles; builds durable reputations but invites external conflict with corrupt systems."
+    "description": "Values truth even at cost. Creates friction with spy/assassin archetypes; builds strong reputations but may trigger external conflict with corrupt systems."
   },
   {
     "label": "Patient",
-    "description": "Tolerates delay and hardship without rash action. Synergizes with strategist or mentor roles; may clash with rescue‑driven, time‑critical plots."
+    "description": "Tolerates delay and hardship without rash action. Synergizes with strategist or mentor roles; may clash with motivations requiring speed (rescue under time crunch)."
   },
   {
     "label": "Resourceful",
-    "description": "Finds unconventional solutions under constraints. Enables underdogs and explorers; reframes external conflict as solvable puzzles."
+    "description": "Finds unconventional solutions under constraints. Supports explorer/ranger, offsets lack of power or status, and reframes external conflict as solvable puzzles."
   },
   {
     "label": "Humble",
-    "description": "Understates ability, inviting trust and learning. Counters hubris as a fatal flaw and strengthens mentor‑mentee dynamics."
+    "description": "Understates ability, inviting trust and learning. Counters hubris as a fatal flaw and strengthens mentor-mentee dynamics."
   },
   {
     "label": "Curious",
-    "description": "Seeks knowledge and novelty. Fuels scholar/magician arcs; can conflict with secrets and spark plots by opening forbidden doors."
+    "description": "Seeks knowledge and novelty. Fuels scholar/magician/archetypes; can conflict with secrets and trigger plot by opening forbidden doors."
   },
   {
     "label": "Empathetic",
-    "description": "Reads and resonates with emotions. Bolsters diplomat/leader roles and helps bridge factional divides despite reputational baggage."
+    "description": "Reads and resonates with emotions. Bolsters diplomat/leader roles and mitigates reputational damage by building bridges across factions."
   },
   {
     "label": "Resilient",
-    "description": "Recovers from setbacks, sustaining motivation. Harmonizes with tragic backstories and helps outlast oppressive external forces."
+    "description": "Recovers from setbacks, sustaining motivation across long arcs. Harmonizes with tragic backstories and helps characters outlast oppressive external forces."
   },
   {
     "label": "Creative",
-    "description": "Generates fresh ideas or aesthetics. Amplifies creator/artist roles; reframes conflict through expression and design."
+    "description": "Generates fresh ideas or aesthetics. Amplifies creator/artist roles; can reframe external conflict into expressive action and supports visionary destinies."
   },
   {
     "label": "Disciplined",
-    "description": "Maintains focus and habits over time. Suits warrior/monk/engineer types; counterbalances impulsive teammates."
+    "description": "Maintains focus and habits over time. Suits warrior/monk/engineer types; counters impulsive flaws and stabilizes teams."
   },
   {
     "label": "Generous",
-    "description": "Shares resources and credit. Enhances caregiver/leader reputations and challenges scarcity‑driven motivations."
+    "description": "Shares resources and credit. Enhances caregiver/leader reputations and challenges scarcity-driven motivations."
   },
   {
     "label": "Diligent",
-    "description": "Applies sustained care and effort. Supports precision roles (judge, engineer) and pays off in mastery arcs."
+    "description": "Applies sustained effort and care. Interlocks with occupations requiring precision (judge, engineer); destiny rewards diligence with mastery arcs."
   },
   {
     "label": "Adaptable",
-    "description": "Shifts tactics when conditions change. Vital for explorers and spies; mitigates rigid fatal flaws."
+    "description": "Shifts tactics when conditions change. Vital for explorers and spies; reduces risk from rigid fatal flaws."
   },
   {
     "label": "Wise",
-    "description": "Integrates knowledge with judgment. Powers mentor/sage roles; curbs rash motivations and avoids needless tragedy."
+    "description": "Integrates knowledge with judgment. Powers mentor/sage roles; can challenge rash motivations and prevent avoidable tragedy."
   },
   {
     "label": "Brave",
-    "description": "Faces danger head‑on, often physically. Frequently the tipping point in external set‑pieces when time is short."
+    "description": "Faces danger head-on. Similar to courage but more physical expression; often the tipping point in external conflict set pieces."
   },
   {
-    "label": "Just",
+    "label": "Just/Fair",
     "description": "Balances competing claims impartially. Supports judge/ruler archetypes; collides with corrupt institutions and exposes secrets."
   },
   {
     "label": "Optimistic",
-    "description": "Expects good outcomes, sustaining morale. Useful in bleak settings but may blind to risks, fueling internal tension with pragmatism."
+    "description": "Expects good outcomes, sustaining morale. Useful in bleak settings; may blind to risks (creating internal conflict with pragmatism)."
   },
   {
     "label": "Strategic",
-    "description": "Thinks in systems and horizons. Supports leader/strategist arcs and translates motivation into achievable plans."
+    "description": "Thinks in systems and long horizons. Supports leader/strategist archetypes and reframes motivation into achievable plans."
   },
   {
     "label": "Charismatic",
@@ -85,19 +85,19 @@
   },
   {
     "label": "Protective",
-    "description": "Defends others instinctively. Powers guardian/healer arcs; escalates conflict when threats arise."
+    "description": "Defends others instinctively. Powers guardian/healer arcs; can escalate external conflict when threats arise."
   },
   {
     "label": "Determined",
-    "description": "Refuses to quit, converting motivation into action. Can tip into obsession if unbalanced by humility or reflection."
+    "description": "Refuses to quit, converting motivation into action. Interacts with fatal flaws (obsession) and can tip into self-destruction if unbalanced."
   },
   {
     "label": "Pragmatic",
-    "description": "Chooses workable solutions over ideals. Harmonizes with engineer/merchant roles; clashes with zealotry."
+    "description": "Chooses workable solutions over ideals. Harmonizes with engineer/merchant roles; clashes with zealotry or prophetic certainty."
   },
   {
     "label": "Reflective",
-    "description": "Thinks deeply about choices and consequences. Defuses impulsive traits and strengthens internal arcs."
+    "description": "Thinks deeply about choices and consequences. Defuses impulsive traits and strengthens internal conflict arcs."
   },
   {
     "label": "Perceptive",
@@ -105,7 +105,7 @@
   },
   {
     "label": "Tolerant",
-    "description": "Accepts difference without prejudice. Stabilizes diverse teams and counteracts bigoted forces."
+    "description": "Accepts difference without prejudice. Stabilizes diverse teams and counteracts bigoted external forces."
   },
   {
     "label": "Gracious",
@@ -113,7 +113,7 @@
   },
   {
     "label": "Forgiving",
-    "description": "Releases justified resentment. Resolves internal arcs and can avert tragedy by breaking revenge loops."
+    "description": "Releases justified resentment. Resolves internal conflict arcs and can avert tragic destinies."
   },
   {
     "label": "Open‑minded",
@@ -121,7 +121,7 @@
   },
   {
     "label": "Dependable",
-    "description": "Can be counted on under pressure. Builds reputation capital and offsets chaos‑prone teammates."
+    "description": "Can be counted on under pressure. Builds reputation capital and offsets chaos-prone teammates."
   },
   {
     "label": "Supportive",
@@ -129,19 +129,19 @@
   },
   {
     "label": "Tenacious",
-    "description": "Clings to goals doggedly. Great for underdogs; can ossify into obsession (a fatal flaw) when unchecked."
+    "description": "Clings to goals doggedly. Great for underdogs; can inflate to obsession (fatal flaw) when unchecked."
   },
   {
     "label": "Altruistic",
-    "description": "Sacrifices for others with minimal self‑interest. Pairs with hero/caregiver destinies; risks burnout."
+    "description": "Sacrifices for others with minimal self-interest. Pairs with caregiver/hero destinies like martyrdom; risks burnout."
   },
   {
     "label": "Cooperative",
-    "description": "Works smoothly in teams. Reduces friction and amplifies collective strategy under stress."
+    "description": "Works smoothly in teams. Mitigates internal conflict and amplifies collective strategy."
   },
   {
     "label": "Decisive",
-    "description": "Commits quickly with conviction. Crucial in crisis; can conflict with consensus‑driven cultures."
+    "description": "Commits to a course quickly with conviction. Crucial in crisis; can conflict with reflective or consensus-led cultures."
   },
   {
     "label": "Meticulous",
@@ -149,7 +149,7 @@
   },
   {
     "label": "Persuasive",
-    "description": "Moves minds through argument or story. Key for diplomat/bard; ethically ambiguous when paired with dark aims."
+    "description": "Moves minds through argument or story. Key for diplomat/bard; ethically ambiguous when paired with dark motivations."
   },
   {
     "label": "Playful",
@@ -157,15 +157,15 @@
   },
   {
     "label": "Innovative",
-    "description": "Pushes boundaries to invent better ways. Pairs with creator/engineer; attracts resistance from tradition."
+    "description": "Pushes boundaries to invent better ways. Pairs with creator/engineer; invites external resistance from tradition."
   },
   {
     "label": "Integrity‑driven",
-    "description": "Aligns action with values despite cost. Strengthens reputation and resolves internal dissonance."
+    "description": "Aligns action with values even when costly. Strengthens reputation and resolves internal dissonance."
   },
   {
     "label": "Imaginative",
-    "description": "Visualizes possibilities beyond constraints. Fuels visionary arcs; enables lateral solutions."
+    "description": "Visualizes possibilities beyond constraints. Fuels visionary arcs; enables lateral solutions in external conflict."
   },
   {
     "label": "Observant",
@@ -173,11 +173,11 @@
   },
   {
     "label": "Self‑aware",
-    "description": "Recognizes one’s own patterns and limits. Damps fatal flaws before escalation; deepens internal arcs."
+    "description": "Recognizes one’s own patterns and limits. Damps fatal flaws before they escalate; deepens internal arcs."
   },
   {
     "label": "Steadfast",
-    "description": "Holds course under pressure. Stabilizes teams and sustains campaigns; risks rigidity when paired with pride."
+    "description": "Holds course under pressure. Stabilizes teams and sustains long campaigns; risk of rigidity when paired with pride."
   },
   {
     "label": "Tactful",
@@ -185,18 +185,18 @@
   },
   {
     "label": "Intuitive",
-    "description": "Trusts pattern‑sense and gut. Useful when data is sparse; tension arises when it contradicts analysis."
+    "description": "Trusts pattern-sense and gut. Useful when data is sparse; tension arises when it contradicts analysis."
   },
   {
     "label": "Visionary",
-    "description": "Sees trajectories and meaning others miss. Anchors movement‑building destinies; can clash with pragmatists."
+    "description": "Sees trajectories and meaning others miss. Anchors movement-building destinies; can clash with pragmatists."
   },
   {
     "label": "Grounded",
-    "description": "Keeps perspective amid hype or panic. Balances charismatic teammates; protects against reputation swings."
+    "description": "Keeps perspective amid hype or panic. Balances visionary or charismatic teammates; protects from swings in reputation."
   },
   {
     "label": "Sociable",
-    "description": "Builds broad networks naturally. Unlocks resources and intel; increases exposure to exploitation and secrets."
+    "description": "Builds broad networks naturally. Unlocks resources and information; vulnerable to secrets/exploitation."
   }
 ]
