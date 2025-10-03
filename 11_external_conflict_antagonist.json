@@ -1,1 +1,146 @@
-[]
+[
+  {
+    "label": "Tyrant Ruler",
+    "description": "A despot concentrates power through fear and spectacle. The protagonist must build coalition and courage while avoiding purges and co-optation."
+  },
+  {
+    "label": "Corrupt Council",
+    "description": "A committee hides graft behind procedure. Winning requires transparency campaigns, whistleblowers, or parallel institutions."
+  },
+  {
+    "label": "Occupying Empire",
+    "description": "Foreign rule extracts resources and identity. Resistance blends sabotage, diplomacy, and survival ethics."
+  },
+  {
+    "label": "Religious Inquisition",
+    "description": "Orthodoxy polices thought with prisons and pyres. The conflict pits conscience and evidence against dogma and terror."
+  },
+  {
+    "label": "Crime Syndicate",
+    "description": "Organized predation buys police and politicians. The fight is as much financial as physical; reputations become currency."
+  },
+  {
+    "label": "Warlord",
+    "description": "A charismatic butcher offers protection for tribute. Communities must choose appeasement, exile, or insurgency."
+  },
+  {
+    "label": "Rival House/Clan",
+    "description": "Feud legacy turns every slight into escalation. Breaking the loop demands truth, marriage, or mutual exhaustion."
+  },
+  {
+    "label": "Assassin’s Guild",
+    "description": "Killing is systemic and professional. Security becomes a lifestyle; love and routine turn into vulnerabilities."
+  },
+  {
+    "label": "Corporate Cartel",
+    "description": "Conglomerates privatize necessity. Antagonism lives in contracts, patents, and price points as much as thugs."
+  },
+  {
+    "label": "Plague",
+    "description": "Disease turns neighbors into vectors and tests social fabric. Science, logistics, and compassion become weapons and shields."
+  },
+  {
+    "label": "Famine",
+    "description": "Empty fields reveal unjust systems. Relief, reform, and rationing contend with hoarding and panic."
+  },
+  {
+    "label": "Catastrophic Storm",
+    "description": "Weather becomes siege. Preparation and mutual aid decide survival more than heroics."
+  },
+  {
+    "label": "Wildfire",
+    "description": "A living front devours homes and hopes. Strategy is terrain, wind, and evacuation; sacrifice buys time."
+  },
+  {
+    "label": "Predator Beast",
+    "description": "Nature stalks as singular menace. Knowledge of habitat and humility decide who walks away."
+  },
+  {
+    "label": "Haunted Land",
+    "description": "The dead or wronged demand redress. The living must exhume truth and change practice, not just banish spirits."
+  },
+  {
+    "label": "Ancient Curse",
+    "description": "A binding wrong ripples across generations. Breaking it requires restitution, not merely ritual."
+  },
+  {
+    "label": "Rogue AI",
+    "description": "Optimization without ethics eats liberty. Countermeasures blend code, law, and culture."
+  },
+  {
+    "label": "Surveillance State",
+    "description": "Eyes everywhere breed self-censorship and conformity. Privacy technologies and subversive art become insurgent tools."
+  },
+  {
+    "label": "Doomsday Cult",
+    "description": "Apocalyptic certainty justifies atrocity. De-radicalization, infiltration, or containment become the strategy set."
+  },
+  {
+    "label": "Resource Scarcity",
+    "description": "Water, energy, or rare metals pit need against greed. The battle is governance and technology against hoarding."
+  },
+  {
+    "label": "Environmental Collapse",
+    "description": "Systems fail in cascade: soil, seas, seasons. Adaptation and accountability must outrun denial."
+  },
+  {
+    "label": "Economic Crash",
+    "description": "Credit freezes; jobs vanish. Mutual aid and institutional reform are the only exits from despair and demagogue."
+  },
+  {
+    "label": "Caste System",
+    "description": "Birth fixes worth; mobility is treason. The struggle is cultural as well as legal; solidarity across lines is lethal to the order."
+  },
+  {
+    "label": "Colonial Administration",
+    "description": "Rule by distant strangers who don’t bleed where they legislate. Dismantling requires local authority and narrative reclamation."
+  },
+  {
+    "label": "Propaganda Engine",
+    "description": "Lies industrialized into consensus. Truth must become contagious—through trust networks and compelling story."
+  },
+  {
+    "label": "Demonic Incursion",
+    "description": "Malevolent nonhuman minds prey on desire. Boundaries, bargains, and bravery define the front line."
+  },
+  {
+    "label": "Fae Court",
+    "description": "Beauty with rules that read like traps. Victory is precision, courtesy, and clever loopholes—not swords."
+  },
+  {
+    "label": "Necromancer",
+    "description": "Death is weaponized and memory abused. The price of victory is often confronting one’s own dead."
+  },
+  {
+    "label": "Vampire Syndicate",
+    "description": "Immortal elites farm the living. The counter is community, sunlight (literal or metaphorical), and broken invitations."
+  },
+  {
+    "label": "Dragon Overlord",
+    "description": "A hungry sovereign hoards wealth and weather. Diplomacy, tribute, and slaying each write different futures for the realm."
+  },
+  {
+    "label": "Time Rift",
+    "description": "Cause and effect fracture. The antagonist is entropy itself; choices must reconcile paradox or choose a preferred loss."
+  },
+  {
+    "label": "Parallel Regime (Mirror World)",
+    "description": "Another version of the world wages covert war. Identity, loyalty, and destiny tangle with doubles and divergences."
+  },
+  {
+    "label": "Sentient Plague",
+    "description": "Disease that learns and adapts. The fight is against intelligence with hunger as its logic."
+  },
+  {
+    "label": "Terraforming Corporation",
+    "description": "Worlds are remade for profit, not people. The hero must choose sabotage, buyout, or mass migration."
+  },
+  {
+    "label": "Cosmic Indifference",
+    "description": "The universe does not care and sometimes notices. Survival means humility, protective ritual, or refusal to look away."
+  },
+  {
+    "label": "Bureaucratic Maze",
+    "description": "No single villain, only process that erodes dignity. The weapon is persistence, documentation, and coalition."
+  }
+]

@@ -1,1 +1,122 @@
-[]
+[
+  {
+    "label": "Beloved",
+    "description": "The character enjoys broad affection earned through visible service or charisma. Beloved status grants social capital but raises stakes when secrets or flaws threaten the image. Destiny often tests whether they protect the people who love them or the persona those people adore."
+  },
+  {
+    "label": "Revered",
+    "description": "Venerated as more-than-mortal (saint, champion, founder), they inspire obedience—and brittle expectations. Reverence amplifies any fall from grace and attracts zealots and opportunists alike. Internal conflict centers on humility versus the weight of symbolhood."
+  },
+  {
+    "label": "Respected",
+    "description": "A reputation for competence and fairness creates durable trust across factions. Respect smooths negotiations yet pressures the character to avoid risk that might tarnish reliability. Conflicts force a choice between safe adequacy and bold transformation."
+  },
+  {
+    "label": "Trusted",
+    "description": "Known for keeping confidences and commitments, they become a keystone in networks. Trust grants access to secrets and high-stakes roles but turns any lapse into systemic collapse. Flaws like compulsive secrecy or people-pleasing either strengthen or shatter this status."
+  },
+  {
+    "label": "Honorable",
+    "description": "Publicly aligned with a code, they are predictably principled—and predictable to adversaries. Honor legitimizes authority yet complicates compromises necessary for peace. Destiny hinges on whether the code serves people or pride."
+  },
+  {
+    "label": "Feared",
+    "description": "Their name travels ahead as threat or inevitability. Fear compels compliance but breeds sabotage and isolation; love becomes suspect. Redemption arcs must convert terror into respect without losing deterrence."
+  },
+  {
+    "label": "Infamous",
+    "description": "Notorious for a scandal or crime, they carry the magnetic stigma of transgression. Infamy grants leverage among outlaws and media but blocks institutional routes. Secrets about context or guilt can invert the label—or seal it."
+  },
+  {
+    "label": "Notorious",
+    "description": "Famous for spectacle more than substance, they command attention but shallow loyalty. The reputation invites manipulation by flatterers and opportunists. Destiny tests whether they grow depth or double down on the show."
+  },
+  {
+    "label": "Underestimated",
+    "description": "Dismissed as harmless or minor, they operate beneath notice. This grants tactical freedom but starves them of resources until a reveal. Breakout moments pivot the narrative and redraw power maps."
+  },
+  {
+    "label": "Overlooked",
+    "description": "Invisible due to class, role, or bias, they witness what others miss. Overlooked status breeds both resentment and patience, making them potent truth-tellers. Recognition forces renegotiation with the world and with self-worth."
+  },
+  {
+    "label": "Pariah",
+    "description": "Socially exiled for taboo or alleged betrayal, they live at civilization’s edges. Pariah status hardens self-reliance and forges unlikely coalitions among the discarded. Destiny asks if they return as reformer, avenger, or founder elsewhere."
+  },
+  {
+    "label": "Scapegoated",
+    "description": "Official blame shields the powerful while staining the innocent. This reputation bends motivations toward truth-telling, justice, or survival. Exoneration arcs must show receipts, not rhetoric."
+  },
+  {
+    "label": "Misunderstood",
+    "description": "Motives read wrong, methods misread, they bleed from friendly fire. Misunderstanding complicates alliances and encourages secrecy as self-defense. Clarifying acts risk vulnerability but unlock their true coalition."
+  },
+  {
+    "label": "Mysterious",
+    "description": "A cultivated opacity—masks, aliases, ritual silence—turns them into a riddle. Mystery protects from prejudice and creates allure, but it chokes trust. The reveal must be worth the suspense."
+  },
+  {
+    "label": "Legendary",
+    "description": "Stories about them inflate beyond fact, making the present compete with myth. Legendary status recruits followers and enemies shaped by tales rather than truth. The arc asks whether the person can edit their own legend."
+  },
+  {
+    "label": "Disgraced",
+    "description": "A public failure or revealed hypocrisy toppled their standing. Disgrace forces reinvention or flight; institutions weaponize it to erase prior good. Redemption demands changed habits, not polished narratives."
+  },
+  {
+    "label": "Dishonored",
+    "description": "Oath broken, banner stained, their name is a warning. The character confronts a choice: reclaim the code, rewrite it, or abandon it entirely. Every handshake tests whether trust can be rehabilitated."
+  },
+  {
+    "label": "Untested",
+    "description": "Bright promise without proof, they are invested with hope and skepticism in equal measure. First trials define the narrative strongly, for good or ill. Mentors and saboteurs both rush to shape them."
+  },
+  {
+    "label": "Prodigy",
+    "description": "Mastery arrived early, warping expectations and social age. Pressure to keep dazzling breeds perfectionism and isolation. The arc weighs excellence against humanity."
+  },
+  {
+    "label": "Charlatan",
+    "description": "An expert at feigned expertise; their brand is borrowed certainty. Charisma yields quick wins while truth accrues compound interest against them. Unmasking is inevitable; the question is whether they pivot to honesty."
+  },
+  {
+    "label": "Reformed",
+    "description": "Publicly turned from a past vice or crime, they carry both testimony and suspicion. Reformed status opens doors to heal or to grift; every stumble is judged as relapse. Accountability structures determine endurance."
+  },
+  {
+    "label": "Reluctant Icon",
+    "description": "Elevated against their will by luck or symbol hunger, they resist the pedestal. The reputation grants reach while threatening authenticity. The arc explores stewardship without surrendering self."
+  },
+  {
+    "label": "Folk Hero",
+    "description": "Claimed by the commons, not the court; songs carry their name farther than decrees. Folk acclaim protects and endangers, depending on who governs. Destiny asks whether they stay street-side or accept institutional power."
+  },
+  {
+    "label": "Outcast Visionary",
+    "description": "Ideas run ahead of acceptance, and exile follows. They attract the curious and repel the comfortable. Time—or a catalyzing crisis—proves them prophet or crank."
+  },
+  {
+    "label": "Holy Figure",
+    "description": "Aura of sanctity, real or projected, grants moral leverage. Temptations include control, hypocrisy, or gullibility toward flatterers. Testing comes when miracles fail or politics bite."
+  },
+  {
+    "label": "Heretic",
+    "description": "Named dangerous for ideas or alliances, they split communities. Heresy can be truth before its time—or rot glamorized. The arc hinges on evidence and outcomes."
+  },
+  {
+    "label": "Patriot",
+    "description": "Reputation tied to service of a nation or cause. Patriotism legitimizes sacrifice but blinds to sins done in the flag’s name. Conflict tests loyalty to people over symbols."
+  },
+  {
+    "label": "Traitor",
+    "description": "Branded as betrayer—sometimes correctly, often conveniently. The mark endures beyond courts and wars; family inherits it. Reframing requires exposing the larger betrayal they resisted—or accepting the role fully."
+  },
+  {
+    "label": "Shadow Broker",
+    "description": "Known for trading favors and secrets, not ideals. Their reputation buys access while taxing trust. The story asks whether they’ll spend that capital on something larger than themselves."
+  },
+  {
+    "label": "Lucky",
+    "description": "Fortunate beyond the curve, they attract envy and risk. Luck covers sloppiness until it doesn’t; then reputation flips faster than skill can compensate. Maturity means building systems that don’t require miracles."
+  }
+]
