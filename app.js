@@ -1,20 +1,21 @@
 /* Cool Character Brainstormer — app.js (complete, 9 reels, self-initializing)
-   - Uses your existing HTML structure/IDs/classes
-   - Loads 9 JSON lists from your repo (pinned + main, jsDelivr + raw GH)
-   - Falls back to INLINE_DATA so reels populate even if network/CSP blocks
-   - No modules; classic <script> compatible; auto-inits on DOMContentLoaded
+   - Classic global (no modules). Exposes window.Brainstormer.init()
+   - Loads JSON from your repo (pinned commit + main, jsDelivr + raw GH)
+   - Inline fallback arrays if network blocked
 */
 
 (function () {
   'use strict';
 
   /* ---------------------- SWITCHES ---------------------- */
-  const FORCE_INLINE = true; // set true to skip network and use INLINE_DATA only
-  const DEBUG = false;        // set true for verbose console logs
+  const FORCE_INLINE = false; // set true to skip network and use INLINE_DATA only
+  const DEBUG = false;
 
   /* ---------------------- DOM HELPERS ---------------------- */
   const $  = (s, el=document)=>el.querySelector(s);
   const $$ = (s, el=document)=>Array.from(el.querySelectorAll(s));
+  const clamp = (v,a,b)=>Math.max(a,Math.min(b,v));
+  const esc = s => String(s).replace(/[&<>\"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
   function status(msg){
     const el = $('#dataStatus');
@@ -23,8 +24,7 @@
   }
 
   /* ---------------------- DATA SOURCES ---------------------- */
-  const PINNED = 'b739578b5774a58e8e6ef6f11cad019b9fefd6e6'; // your JSON commit
-
+  const PINNED = 'b739578b5774a58e8e6ef6f11cad019b9fefd6e6'; // from your links
   const REMOTE_BASES = [
     `https://cdn.jsdelivr.net/gh/Drewg38/StoryBrainstormer@${PINNED}/`,
     `https://raw.githubusercontent.com/Drewg38/StoryBrainstormer/${PINNED}/`,
@@ -45,7 +45,6 @@
   ];
 
   /* ---------------------- INLINE FALLBACK ---------------------- */
-  // Replace these arrays with your full JSON contents anytime. If you want to run 100% offline, set FORCE_INLINE = true.
   const INLINE_DATA = {
     archetype: ["Healer","Warrior","Trickster","Scholar","Protector","Visionary","Outcast","Leader","Investigator","Mediator"],
     positive_trait: ["Resourceful","Compassionate","Courageous","Clever","Loyal","Disciplined","Patient","Curious","Honest","Resilient"],
@@ -58,28 +57,34 @@
     internal_conflict: ["Justice vs. Mercy","Faith vs. Doubt","Duty vs. Desire","Honor vs. Survival","Truth vs. Loyalty","Control vs. Trust","Tradition vs. Change","Hope vs. Cynicism","Solitude vs. Connection","Ambition vs. Conscience"],
   };
 
-  /* ---------------------- UTILS ---------------------- */
-  const clamp = (v,a,b)=>Math.max(a,Math.min(b,v));
-  const esc = s => String(s).replace(/[&<>\"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-
-  function seedLine(p){
-    const g=k=>p[k]||'';
-    const a=s=>/^[aeiou]/i.test(s)?`an ${s}`:`a ${s}`;
-    const parts=[
-      g('positive_trait') && `A ${g('positive_trait').toLowerCase()}`,
-      g('archetype') || 'character',
-      g('occupation') && `working as ${a(g('occupation').toLowerCase())}`,
-      g('motivation') && `driven by ${g('motivation').toLowerCase()}`,
-      g('fatal_flaw') && `but haunted by ${a(g('fatal_flaw').toLowerCase())}`,
-      g('secret') && `who hides ${a(g('secret').toLowerCase())}`,
-      g('external_conflict') && `while facing ${a(g('external_conflict').toLowerCase())}`,
-      g('internal_conflict') && `and torn between ${g('internal_conflict').toLowerCase()}`,
-      g('destiny') && `on a path toward ${g('destiny').toLowerCase()}`
-    ].filter(Boolean).join(', ') + '.';
-    return parts.replace(/\s+/g,' ').replace(/ ,/g,',');
+  /* ---------------------- LOADERS ---------------------- */
+  async function fetchJsonWithFallback(file){
+    let lastErr;
+    for (const base of REMOTE_BASES){
+      const url = base + file;
+      try{
+        if (DEBUG) console.log('[CBB] GET', url);
+        const res = await fetch(url + (base.includes('jsdelivr') ? '' : `?t=${Date.now()}`), {mode:'cors', cache:'no-cache'});
+        if (!res.ok) throw new Error('HTTP '+res.status);
+        const text = await res.text();
+        const data = JSON.parse(text);
+        if (!Array.isArray(data)) throw new Error('JSON is not an array');
+        return data.map(x => typeof x==='string' ? x : (x.label || x.value || JSON.stringify(x)));
+      }catch(e){ lastErr = e; }
+    }
+    throw lastErr || new Error('All sources failed for ' + file);
   }
 
-  /* ---------------------- REEL (momentum + snap) ---------------------- */
+  async function loadAllLists(){
+    const out = {};
+    for (const m of LISTS){
+      out[m.key] = await fetchJsonWithFallback(m.file);
+      status(`Loaded ${m.file} (${out[m.key].length})`);
+    }
+    return out;
+  }
+
+  /* ---------------------- REELS ---------------------- */
   function buildReel(slotEl, items, opts){
     const vp    = slotEl.querySelector('.viewport');
     const strip = slotEl.querySelector('.list.reel');
@@ -137,34 +142,24 @@
     return api;
   }
 
-  /* ---------------------- REMOTE LOADING ---------------------- */
-  async function fetchJsonWithFallback(file){
-    let lastErr;
-    for (const base of REMOTE_BASES){
-      const url = base + file;
-      try{
-        if (DEBUG) console.log('[CBB] GET', url);
-        const res = await fetch(url + (base.includes('jsdelivr') ? '' : `?t=${Date.now()}`), {mode:'cors', cache:'no-cache'});
-        if (!res.ok) throw new Error('HTTP '+res.status);
-        const text = await res.text();
-        const data = JSON.parse(text);
-        if (!Array.isArray(data)) throw new Error('JSON is not an array');
-        return data.map(x => typeof x==='string' ? x : (x.label || x.value || JSON.stringify(x)));
-      }catch(e){ lastErr=e; }
-    }
-    throw lastErr || new Error('All sources failed for ' + file);
+  /* ---------------------- CONCEPT PANEL ---------------------- */
+  function seedLine(p){
+    const g=k=>p[k]||'';
+    const a=s=>/^[aeiou]/i.test(s)?`an ${s}`:`a ${s}`;
+    const parts=[
+      g('positive_trait') && `A ${g('positive_trait').toLowerCase()}`,
+      g('archetype') || 'character',
+      g('occupation') && `working as ${a(g('occupation').toLowerCase())}`,
+      g('motivation') && `driven by ${g('motivation').toLowerCase()}`,
+      g('fatal_flaw') && `but haunted by ${a(g('fatal_flaw').toLowerCase())}`,
+      g('secret') && `who hides ${a(g('secret').toLowerCase())}`,
+      g('external_conflict') && `while facing ${a(g('external_conflict').toLowerCase())}`,
+      g('internal_conflict') && `and torn between ${g('internal_conflict').toLowerCase()}`,
+      g('destiny') && `on a path toward ${g('destiny').toLowerCase()}`
+    ].filter(Boolean).join(', ') + '.';
+    return parts.replace(/\s+/g,' ').replace(/ ,/g,',');
   }
 
-  async function loadAllLists(){
-    const out = {};
-    for (const m of LISTS){
-      out[m.key] = await fetchJsonWithFallback(m.file);
-      status(`Loaded ${m.file} (${out[m.key].length})`);
-    }
-    return out;
-  }
-
-  /* ---------------------- CONCEPT RENDER ---------------------- */
   function renderConcept(picks){
     const box = $('#concept'); if (!box) return;
     const seed = seedLine(picks);
@@ -210,7 +205,12 @@
       try{
         if (FORCE_INLINE) throw new Error('FORCE_INLINE');
         status('Loading lists from GitHub/CDN…');
-        data = await loadAllLists();
+        const out = {};
+        for (const m of LISTS){
+          out[m.key] = await fetchJsonWithFallback(m.file);
+          status(`Loaded ${m.file} (${out[m.key].length})`);
+        }
+        data = out;
         status('Lists loaded ✓');
       }catch(_){
         status('Using inline lists ✓');
@@ -236,7 +236,6 @@
       $(btns.manual)?.addEventListener('click', ()=> $$('.slot.locked').forEach(s=>s.classList.remove('locked')));
       $(btns.lock )?.addEventListener('click', ()=> { Object.values(reels).forEach(r=>r && r.snapTo(r.index,0)); $$('.slot').forEach(s=>s.classList.add('locked')); });
 
-      // First render + resize
       renderConcept(picks);
       window.addEventListener('resize', ()=> Object.values(reels).forEach(r=>r && r.measure()));
     }
@@ -244,7 +243,6 @@
 
   /* ---------------------- AUTO-INIT ---------------------- */
   document.addEventListener('DOMContentLoaded', ()=>{
-    // Only run if your wrapper exists (matches your HTML)
     if (document.querySelector('#cbb-root')){
       window.Brainstormer.init({
         els:{
