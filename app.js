@@ -1,32 +1,29 @@
-/* Cool Character Brainstormer — app.js (final harden)
-   Goals:
-   - 3-row, step-based reels, uniform direction
-   - Concept card fills ONLY on Stop & Lock
-   - 9 lists fetched from pinned StoryBrainstormer commit
-   - Fallback inline data so reels always populate (even if JSON fails)
+/* Cool Character Brainstormer — app.js
+   - 9 reels (archetype → internal_conflict)
+   - Exactly 3 visible rows per reel (step-based rendering)
+   - Uniform wheel/touch direction across all reels (down = next)
+   - Spins run until you press “Stop & Lock” (no auto-stop)
+   - Concept card populates only on Stop & Lock
+   - Loads JSON lists from your StoryBrainstormer repo (pinned commit)
 */
 (function(){
   'use strict';
 
-  /* ================== tiny helpers ================== */
+  /* ------------- helpers ------------- */
   const $  = (s, r=document) => r.querySelector(s);
   const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
   const esc = s => String(s ?? '').replace(/[&<>\"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-
   const STATUS = $('#dataStatus');
-  const setStatus = (msg) => { if (STATUS) STATUS.textContent = msg || ''; };
+  const setStatus = (msg)=>{ if(STATUS) STATUS.textContent = msg || ''; };
 
-  // Force one global direction rule: positive delta => NEXT
-  const FORCE_DIR = +1; // keep at +1 (down/drag-down -> next). Flip to -1 if you ever want the opposite globally.
-
-  /* ========== Data sources (your commit) + fallback ========== */
+  // Use your pinned data commit (the JSON links you provided):
   const DATA_COMMIT = 'b739578b5774a58e8e6ef6f11cad019b9fefd6e6';
-  const BASES = [
+  const DATA_BASES = [
     `https://cdn.jsdelivr.net/gh/Drewg38/StoryBrainstormer@${DATA_COMMIT}/`,
     `https://raw.githubusercontent.com/Drewg38/StoryBrainstormer/${DATA_COMMIT}/`,
   ];
 
-  const MAP = [
+  const LISTS = [
     { id:'#reel_archetype',  key:'archetype',         file:'01_archetype_role.json' },
     { id:'#reel_positive',   key:'positive_trait',    file:'02_positive_trait.json' },
     { id:'#reel_motivation', key:'motivation',        file:'04_motivation_core_drive.json' },
@@ -38,17 +35,17 @@
     { id:'#reel_internal',   key:'internal_conflict', file:'12_internal_conflict.json' },
   ];
 
-  // Minimal fallback samples so reels show something even if network fails
+  // tiny fallback seeds (only used if JSON fetch fails)
   const FALLBACK = {
-    archetype:['Healer','Rebel','Scholar','Scout'].map(name=>({name})),
-    positive_trait:['Resourceful','Loyal','Clever','Brave'].map(name=>({name})),
-    motivation:['Redemption','Discovery','Freedom','Belonging'].map(name=>({name})),
-    fatal_flaw:['Obsession','Pride','Fear','Impulsiveness'].map(name=>({name})),
-    destiny:['Triumph','Tragedy','Transformation','Exile'].map(name=>({name})),
-    occupation:['Smuggler-medic','Archivist','Caravan guard','Street preacher'].map(name=>({name})),
-    secret:['Forged miracle','Hidden lineage','Double agent','Buried crime'].map(name=>({name})),
-    external_conflict:['Inquisition','Gang war','Famine','Occupation'].map(name=>({name})),
-    internal_conflict:['Justice vs. Mercy','Duty vs. Desire','Faith vs. Doubt','Self vs. Family'].map(name=>({name})),
+    archetype:['Healer','Rebel','Scholar'].map(name=>({name})),
+    positive_trait:['Resourceful','Loyal','Clever'].map(name=>({name})),
+    motivation:['Redemption','Discovery','Belonging'].map(name=>({name})),
+    fatal_flaw:['Obsession','Pride','Fear'].map(name=>({name})),
+    destiny:['Triumph','Tragedy','Transformation'].map(name=>({name})),
+    occupation:['Smuggler-medic','Archivist','Guard'].map(name=>({name})),
+    secret:['Forged miracle','Hidden lineage','Double agent'].map(name=>({name})),
+    external_conflict:['Inquisition','Gang war','Famine'].map(name=>({name})),
+    internal_conflict:['Justice vs. Mercy','Duty vs. Desire','Faith vs. Doubt'].map(name=>({name})),
   };
 
   function normalizeList(raw){
@@ -65,8 +62,8 @@
     return [];
   }
 
-  function fetchWithTimeout(url, ms){
-    return new Promise((resolve, reject)=>{
+  function fetchWithTimeout(url, ms=8000){
+    return new Promise((resolve,reject)=>{
       const t = setTimeout(()=>reject(new Error('timeout')), ms);
       fetch(url, {mode:'cors', cache:'no-cache'})
         .then(r=>{ if(!r.ok) throw new Error('HTTP '+r.status); return r.text(); })
@@ -80,14 +77,11 @@
   }
 
   async function getJSON(file){
-    for (const b of BASES){
-      try{
-        const url = b + file;
-        const json = await fetchWithTimeout(url, 6000);
-        return json;
-      }catch(_e){}
+    for (const base of DATA_BASES){
+      try{ return await fetchWithTimeout(base+file, 8000); }
+      catch(_e){}
     }
-    throw new Error('all sources failed for '+file);
+    throw new Error('all data sources failed for '+file);
   }
 
   function windowed(list, center, size=3){
@@ -99,7 +93,7 @@
     return out;
   }
 
-  /* ================== Reel (3-row, step) ================== */
+  /* ------------- reel (3-row step, uniform direction) ------------- */
   function makeReel(rootEl, items){
     const viewport = rootEl.querySelector('.viewport') || rootEl;
     const listEl   = rootEl.querySelector('.list');
@@ -120,18 +114,16 @@
     render();
 
     function step(dir=+1){
-      dir = dir >= 0 ? +1 : -1;
-      // Force consistent global mapping:
-      dir = dir * FORCE_DIR;
+      dir = dir >= 0 ? +1 : -1;            // normalize
       idx = ((idx + dir) % items.length + items.length) % items.length;
       render();
     }
 
-    function spin(speed=1.0){
+    function spin(speed=1){
       if (locked) return;
       if (spinning) cancelAnimationFrame(raf);
       spinning = true;
-      const cadence = 100 / speed;
+      const cadence = 100 / speed;         // smaller cadence = faster stepping
       let last = performance.now(), acc = 0;
       function tick(t){
         if (!spinning) return;
@@ -144,19 +136,19 @@
     function stop(){ spinning=false; cancelAnimationFrame(raf); }
     function lock(v){ locked = (v==null) ? true : !!v; rootEl.classList.toggle('locked', locked); }
 
-    // Uniform wheel (down => next)
+    // Wheel: uniform mapping (wheel down => next) for ALL reels
     let accum=0; const STEP=120;
     function onWheel(e){
       if (locked) return;
       e.preventDefault(); e.stopPropagation();
       if (spinning) return;
-      accum += e.deltaY;                 // SAME for all reels
+      accum += e.deltaY;                   // SAME SIGN EVERYWHERE
       while (accum >=  STEP){ step(+1); accum -= STEP; }
       while (accum <= -STEP){ step(-1); accum += STEP; }
     }
     viewport.addEventListener('wheel', onWheel, {passive:false});
 
-    // Touch → wheel bridge (keeps same mapping)
+    // Touch → wheel bridge (keeps mapping consistent on mobile)
     (function(){
       let y0=null, acc=0;
       viewport.addEventListener('touchstart', e=>{ if(locked) return; y0=e.touches[0].clientY; acc=0; }, {passive:true});
@@ -174,12 +166,12 @@
 
     return {
       get value(){ return items[idx]; },
-      setItems(arr){ if(arr && arr.length){ items=arr; idx=Math.min(idx,items.length-1); render(); } },
+      setItems(arr){ if(arr && arr.length){ items=arr; idx=Math.min(idx, items.length-1); render(); } },
       render, step, spin, stop, lock
     };
   }
 
-  /* ================== Concept render ================== */
+  /* ------------- concept rendering ------------- */
   function splitVs(s){
     const parts = String(s || '').split(/vs\./i);
     if (parts.length >= 2) return [parts[0].trim(), parts.slice(1).join('vs.').trim()];
@@ -188,12 +180,13 @@
   function oneLinerSeed(p){
     const [A,B] = splitVs(p.internal_conflict);
     const head = (p.positive_trait && p.archetype)
-      ? `${p.positive_trait} ${p.archetype}` : (p.archetype || 'Character');
+      ? `${p.positive_trait} ${p.archetype}`
+      : (p.archetype || 'Character');
     const back = p.backstory_catalyst ? p.backstory_catalyst : (p.occupation ? `now ${p.occupation}` : '');
     const flawMot = [p.fatal_flaw && p.fatal_flaw.toLowerCase(), p.motivation && p.motivation.toLowerCase()]
                     .filter(Boolean).join(' collides with ');
-    const world = p.external_conflict ? p.external_conflict.toLowerCase() : '';
-    const choice = (A && B) ? `a choice between ${A.toLowerCase()} and ${B.toLowerCase()}` : 'a reckoning';
+    const world   = p.external_conflict ? p.external_conflict.toLowerCase() : '';
+    const choice  = (A && B) ? `a choice between ${A.toLowerCase()} and ${B.toLowerCase()}` : 'a reckoning';
     return [
       `${head}${back ? `, ${back}` : ''};`,
       flawMot ? `${flawMot},` : '',
@@ -201,7 +194,7 @@
     ].filter(Boolean).join(' ').replace(/\s+/g,' ').replace(/ ,/g,',');
   }
   function renderConcept(p){
-    const el = $('#concept'); if (!el) return;
+    const el = $('#concept'); if(!el) return;
     const [A,B] = splitVs(p.internal_conflict);
     el.innerHTML = `
       <div>
@@ -221,72 +214,71 @@
       </div>`;
   }
 
-  /* ================== Bootstrap ================== */
-  async function loadAll(){
-    const out = {};
-    for (const m of MAP){
+  /* ------------- bootstrap ------------- */
+  async function loadAllLists(){
+    const data = {};
+    for (const m of LISTS){
       try{
         const json = await getJSON(m.file);
-        out[m.key] = normalizeList(json);
-        if (!out[m.key].length) throw new Error('empty list');
+        data[m.key] = normalizeList(json);
+        if (!data[m.key].length) throw new Error('empty');
       }catch(_e){
-        // fall back to tiny local sample
-        out[m.key] = FALLBACK[m.key] || [{name:'—'}];
+        data[m.key] = FALLBACK[m.key] || [{name:'—'}];
       }
     }
-    return out;
-  }
-
-  function wireButtons(reels){
-    const speeds = { slow:0.9, spin:1.4, fast:2.2 };
-    const btnSlow   = $('#btnSlow');
-    const btnSpin   = $('#btnSpin');
-    const btnFast   = $('#btnFast');
-    const btnManual = $('#btnManual');
-    const btnLock   = $('#btnLock');
-
-    const stopAll = ()=> Object.values(reels).forEach(r=>r.stop());
-    const unlock = ()=>{
-      $$('.slot').forEach(s=>s.classList.remove('locked'));
-      Object.values(reels).forEach(r=>r.lock(false));
-    };
-    const lockAll = ()=>{
-      $$('.slot').forEach(s=>s.classList.add('locked'));
-      Object.values(reels).forEach(r=>r.lock(true));
-    };
-
-    btnSlow  && (btnSlow.onclick  = ()=>{ unlock(); stopAll(); Object.values(reels).forEach(r=>r.spin(speeds.slow)); });
-    btnSpin  && (btnSpin.onclick  = ()=>{ unlock(); stopAll(); Object.values(reels).forEach(r=>r.spin(speeds.spin)); });
-    btnFast  && (btnFast.onclick  = ()=>{ unlock(); stopAll(); Object.values(reels).forEach(r=>r.spin(speeds.fast)); });
-    btnManual&& (btnManual.onclick= ()=>{ stopAll(); unlock(); });
-
-    btnLock  && (btnLock.onclick  = ()=>{
-      stopAll(); lockAll();
-      const picks = {};
-      MAP.forEach(m=>{
-        const r = reels[m.key];
-        picks[m.key] = r?.value?.name || r?.value || '';
-      });
-      renderConcept(picks);
-      setStatus('');
-    });
+    return data;
   }
 
   async function start(){
     try{
-      const lists = await loadAll();
+      setStatus('Loading lists…');
+      const lists = await loadAllLists();
+      setStatus('');
 
-      // Build 9 reels
+      // build reels
       const reels = {};
-      MAP.forEach(m=>{
+      LISTS.forEach(m=>{
         const host = $(m.id);
         if (!host) return;
         const arr = lists[m.key] || [];
         reels[m.key] = makeReel(host, arr);
       });
 
-      wireButtons(reels);
-      setStatus(''); // stay quiet on success
+      // buttons
+      const speeds = { slow:0.9, spin:1.4, fast:2.2 };
+      const btnSlow   = $('#btnSlow');
+      const btnSpin   = $('#btnSpin');
+      const btnFast   = $('#btnFast');
+      const btnManual = $('#btnManual');
+      const btnLock   = $('#btnLock');
+
+      const stopAll   = ()=> Object.values(reels).forEach(r=>r.stop());
+      const unlockAll = ()=>{
+        $$('.slot').forEach(s=>s.classList.remove('locked'));
+        Object.values(reels).forEach(r=>r.lock(false));
+      };
+      const lockAll   = ()=>{
+        $$('.slot').forEach(s=>s.classList.add('locked'));
+        Object.values(reels).forEach(r=>r.lock(true));
+      };
+
+      btnSlow  && (btnSlow.onclick  = ()=>{ unlockAll(); stopAll(); Object.values(reels).forEach(r=>r.spin(speeds.slow)); });
+      btnSpin  && (btnSpin.onclick  = ()=>{ unlockAll(); stopAll(); Object.values(reels).forEach(r=>r.spin(speeds.spin)); });
+      btnFast  && (btnFast.onclick  = ()=>{ unlockAll(); stopAll(); Object.values(reels).forEach(r=>r.spin(speeds.fast)); });
+      btnManual&& (btnManual.onclick= ()=>{ stopAll(); unlockAll(); });
+
+      btnLock  && (btnLock.onclick  = ()=>{
+        stopAll(); lockAll();
+        const picks = {};
+        LISTS.forEach(m=>{
+          const r = reels[m.key];
+          picks[m.key] = r?.value?.name || r?.value || '';
+        });
+        // if you later add a backstory reel, map it as picks.backstory_catalyst
+        renderConcept(picks);
+        setStatus('');
+      });
+
     }catch(e){
       console.error(e);
       setStatus('⚠️ Could not initialize.');
