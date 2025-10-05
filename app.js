@@ -1,24 +1,21 @@
-/* Cool Character Brainstormer — app.js
-   - 9 reels (archetype → internal_conflict)
-   - Exactly 3 visible rows per reel (step-based rendering)
-   - Uniform wheel/touch direction across all reels (down = next)
-   - Spins run until you press “Stop & Lock” (no auto-stop)
-   - Concept card populates only on Stop & Lock
-   - Loads JSON lists from your StoryBrainstormer repo (pinned commit)
+/* Cool Character Brainstormer — app9.js (self-contained)
+   - 9 reels (3 rows visible) with uniform direction
+   - Spins until Stop & Lock
+   - Concept renders on Stop & Lock
+   - Loads StoryBrainstormer JSON from your pinned commit with fallback
 */
 (function(){
   'use strict';
 
-  /* ------------- helpers ------------- */
+  /* ---------- helpers ---------- */
   const $  = (s, r=document) => r.querySelector(s);
   const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
   const esc = s => String(s ?? '').replace(/[&<>\"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const STATUS = $('#dataStatus');
   const setStatus = (msg)=>{ if(STATUS) STATUS.textContent = msg || ''; };
 
-  // Use your pinned data commit (the JSON links you provided):
   const DATA_COMMIT = 'b739578b5774a58e8e6ef6f11cad019b9fefd6e6';
-  const DATA_BASES = [
+  const BASES = [
     `https://cdn.jsdelivr.net/gh/Drewg38/StoryBrainstormer@${DATA_COMMIT}/`,
     `https://raw.githubusercontent.com/Drewg38/StoryBrainstormer/${DATA_COMMIT}/`,
   ];
@@ -35,17 +32,16 @@
     { id:'#reel_internal',   key:'internal_conflict', file:'12_internal_conflict.json' },
   ];
 
-  // tiny fallback seeds (only used if JSON fetch fails)
   const FALLBACK = {
-    archetype:['Healer','Rebel','Scholar'].map(name=>({name})),
-    positive_trait:['Resourceful','Loyal','Clever'].map(name=>({name})),
-    motivation:['Redemption','Discovery','Belonging'].map(name=>({name})),
-    fatal_flaw:['Obsession','Pride','Fear'].map(name=>({name})),
-    destiny:['Triumph','Tragedy','Transformation'].map(name=>({name})),
-    occupation:['Smuggler-medic','Archivist','Guard'].map(name=>({name})),
-    secret:['Forged miracle','Hidden lineage','Double agent'].map(name=>({name})),
-    external_conflict:['Inquisition','Gang war','Famine'].map(name=>({name})),
-    internal_conflict:['Justice vs. Mercy','Duty vs. Desire','Faith vs. Doubt'].map(name=>({name})),
+    archetype:['Healer','Rebel','Scholar','Scout'].map(name=>({name})),
+    positive_trait:['Resourceful','Loyal','Clever','Brave'].map(name=>({name})),
+    motivation:['Redemption','Discovery','Freedom','Belonging'].map(name=>({name})),
+    fatal_flaw:['Obsession','Pride','Fear','Impulsiveness'].map(name=>({name})),
+    destiny:['Triumph','Tragedy','Transformation','Exile'].map(name=>({name})),
+    occupation:['Smuggler-medic','Archivist','Caravan guard','Street preacher'].map(name=>({name})),
+    secret:['Forged miracle','Hidden lineage','Double agent','Buried crime'].map(name=>({name})),
+    external_conflict:['Inquisition','Gang war','Famine','Occupation'].map(name=>({name})),
+    internal_conflict:['Justice vs. Mercy','Duty vs. Desire','Faith vs. Doubt','Self vs. Family'].map(name=>({name})),
   };
 
   function normalizeList(raw){
@@ -77,11 +73,11 @@
   }
 
   async function getJSON(file){
-    for (const base of DATA_BASES){
-      try{ return await fetchWithTimeout(base+file, 8000); }
+    for (const b of BASES){
+      try{ return await fetchWithTimeout(b+file, 8000); }
       catch(_e){}
     }
-    throw new Error('all data sources failed for '+file);
+    throw new Error('all sources failed for '+file);
   }
 
   function windowed(list, center, size=3){
@@ -93,7 +89,7 @@
     return out;
   }
 
-  /* ------------- reel (3-row step, uniform direction) ------------- */
+  /* ---------- Reel (3-row, uniform direction) ---------- */
   function makeReel(rootEl, items){
     const viewport = rootEl.querySelector('.viewport') || rootEl;
     const listEl   = rootEl.querySelector('.list');
@@ -114,7 +110,7 @@
     render();
 
     function step(dir=+1){
-      dir = dir >= 0 ? +1 : -1;            // normalize
+      dir = dir >= 0 ? +1 : -1;            // normalized
       idx = ((idx + dir) % items.length + items.length) % items.length;
       render();
     }
@@ -123,7 +119,7 @@
       if (locked) return;
       if (spinning) cancelAnimationFrame(raf);
       spinning = true;
-      const cadence = 100 / speed;         // smaller cadence = faster stepping
+      const cadence = 100 / speed;
       let last = performance.now(), acc = 0;
       function tick(t){
         if (!spinning) return;
@@ -136,19 +132,19 @@
     function stop(){ spinning=false; cancelAnimationFrame(raf); }
     function lock(v){ locked = (v==null) ? true : !!v; rootEl.classList.toggle('locked', locked); }
 
-    // Wheel: uniform mapping (wheel down => next) for ALL reels
+    // Uniform wheel: wheel down => next (all reels match)
     let accum=0; const STEP=120;
     function onWheel(e){
       if (locked) return;
       e.preventDefault(); e.stopPropagation();
       if (spinning) return;
-      accum += e.deltaY;                   // SAME SIGN EVERYWHERE
+      accum += e.deltaY;                   // SAME sign for all reels
       while (accum >=  STEP){ step(+1); accum -= STEP; }
       while (accum <= -STEP){ step(-1); accum += STEP; }
     }
     viewport.addEventListener('wheel', onWheel, {passive:false});
 
-    // Touch → wheel bridge (keeps mapping consistent on mobile)
+    // Touch → wheel bridge (keeps mapping on mobile)
     (function(){
       let y0=null, acc=0;
       viewport.addEventListener('touchstart', e=>{ if(locked) return; y0=e.touches[0].clientY; acc=0; }, {passive:true});
@@ -171,7 +167,7 @@
     };
   }
 
-  /* ------------- concept rendering ------------- */
+  /* ---------- Concept rendering ---------- */
   function splitVs(s){
     const parts = String(s || '').split(/vs\./i);
     if (parts.length >= 2) return [parts[0].trim(), parts.slice(1).join('vs.').trim()];
@@ -214,28 +210,27 @@
       </div>`;
   }
 
-  /* ------------- bootstrap ------------- */
-  async function loadAllLists(){
-    const data = {};
+  /* ---------- bootstrap ---------- */
+  async function loadAll(){
+    const out = {};
     for (const m of LISTS){
       try{
         const json = await getJSON(m.file);
-        data[m.key] = normalizeList(json);
-        if (!data[m.key].length) throw new Error('empty');
+        out[m.key] = normalizeList(json);
+        if (!out[m.key].length) throw new Error('empty');
       }catch(_e){
-        data[m.key] = FALLBACK[m.key] || [{name:'—'}];
+        out[m.key] = FALLBACK[m.key] || [{name:'—'}];
       }
     }
-    return data;
+    return out;
   }
 
   async function start(){
     try{
       setStatus('Loading lists…');
-      const lists = await loadAllLists();
+      const lists = await loadAll();
       setStatus('');
 
-      // build reels
       const reels = {};
       LISTS.forEach(m=>{
         const host = $(m.id);
@@ -244,7 +239,6 @@
         reels[m.key] = makeReel(host, arr);
       });
 
-      // buttons
       const speeds = { slow:0.9, spin:1.4, fast:2.2 };
       const btnSlow   = $('#btnSlow');
       const btnSpin   = $('#btnSpin');
@@ -274,7 +268,6 @@
           const r = reels[m.key];
           picks[m.key] = r?.value?.name || r?.value || '';
         });
-        // if you later add a backstory reel, map it as picks.backstory_catalyst
         renderConcept(picks);
         setStatus('');
       });
