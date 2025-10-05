@@ -1,0 +1,647 @@
+[
+  {
+    "category": "fatal_flaw",
+    "label": "Hubris",
+    "description": "An overconfidence in one’s specialness that rejects counsel and underestimates risk. It weaponizes admirable strengths (courage, brilliance) into grandstanding, and it bends motivations like mastery or justice toward spectacle. Under pressure, hubris steers arcs toward downfall or pyrrhic victory and invites reputational blowback when secrets or mistakes surface."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Obsession",
+    "description": "A fixation that crowds out perspective, sleep, and relationships. Obsession can supercharge motivations (revenge, discovery, mastery) but narrows empathy and blinds to collateral damage. The arc hinges on whether the character learns to subordinate the focus to a larger good or burns everything for it."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Addiction",
+    "description": "Dependence on a substance or behavior that erodes reliability and trust. It spawns secrets, blackmail risk, and cycles of relapse that destabilize teams. Redemption arcs demand visible accountability; tragic arcs show how craving eclipses purpose."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Cowardice",
+    "description": "A pattern of avoiding risk or responsibility at others’ expense. It clashes with protector or justice motivations and creates harsh internal dissonance between self‑image and behavior. Courage becomes meaningful only once fear is acknowledged and acted through, not denied."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Perfectionism",
+    "description": "Standards so unforgiving that nothing ever ships. It masquerades as diligence while stifling collaboration and momentum, particularly in precision roles (engineer, judge, surgeon). The cure is learning that done, shared, and iterated beats immaculate but imaginary."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Paranoia",
+    "description": "Hypervigilance that reads threats into every shadow. Useful in espionage, it corrodes coalitions, making betrayal self‑fulfilling. The flaw resolves only when the character risks calibrated trust and tolerates uncertainty without control."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Fanaticism",
+    "description": "Zeal so rigid it justifies cruelty and refuses nuance. It hijacks noble motivations (faith, justice) and makes compromise impossible, pushing outcomes toward atrocity, martyrdom, or schism. Allies become heretics the moment they hesitate."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Nihilism",
+    "description": "The conviction that nothing matters, dissolving purpose and obligation. It breeds reckless risk or apathetic drift, sabotaging causes that need belief. The only escape is a chosen meaning—the decision to care despite cosmic indifference."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Jealousy",
+    "description": "Fear of losing love or status that provokes control, sabotage, and surveillance. It thrives in secrecy and scandal, corroding reputations and alliances. Only security earned through honesty—not possession—defuses it."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Vengefulness",
+    "description": "A compulsion to retaliate even when it harms one’s cause. It rots justice into vendetta and invites escalation traps set by canny antagonists. Resolution demands substituting reparation and prevention for pain‑for‑pain."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Control Fixation",
+    "description": "Micromanaging people and variables to fend off anxiety. Effective in crisis, it suffocates teams and successors in peacetime. Sustainable leadership requires letting others own outcomes and tolerating imperfect paths."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Compulsive Dishonesty",
+    "description": "Lying as default, until trust detonates irrevocably. It’s an asset in undercover work, poison everywhere else. The reckoning is necessarily public; rebuilding requires truth told at personal cost."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Prideful Honor",
+    "description": "A rigid code obeyed even when mercy would save lives. It is noble but brittle, pitting oath against compassion and turning the rulebook into the true antagonist. Growth reframes honor as protection of people, not procedures."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Ruthlessness",
+    "description": "Results‑only pragmatism that discards ethics and relationships. It wins battles while losing the war for the soul and the coalition; allies become assets, then casualties. The bill arrives as revolt, despair, or self‑recognition."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Impatience",
+    "description": "A refusal to wait that breaks plans and people. Urgency becomes recklessness; opportunities turn into crises. The lesson is cadence: fast where speed matters, slow where alignment prevents future fires."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Martyr Complex",
+    "description": "Compulsive self‑sacrifice that denies delegation, consent, and rest. It garners adoration but breeds dependency and burnout. True service includes longevity and teaching others to stand."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Savior Complex",
+    "description": "The need to fix everyone, even unasked, turning care into control. It erases agency in the name of love and collapses when a rescue fails. Healthy help requires boundaries and respect for refusal."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Rigidity",
+    "description": "Inability to adapt when facts or contexts change. It breaks in fluid environments and alienates flexible allies. Maturity appears when principles are kept but tactics bend."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Compulsive Secrecy",
+    "description": "Withholding information even from allies as a reflex. It multiplies paranoia, invites catastrophic unmasking, and enables the very betrayals it feared. Trustworthy governance requires sunlight by default, shadow by exception."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Escapism",
+    "description": "Habitual flight into fantasy, vice, or busyness to avoid pain. It buys short‑term relief while letting problems metastasize. The pivot is facing the wound, not outrunning it."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Workaholism",
+    "description": "Overuse of labor to dodge intimacy or grief. It wins reputation and revenue while hollowing health and home. Recovery means scheduling humanity, not just output."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Vanity",
+    "description": "Image over substance, inviting manipulation and scandal. It starves truth‑seeking motivations and hollows victory into spectacle. Humility—crediting others, welcoming critique—restores ballast."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Possessiveness",
+    "description": "Treating people as property in love or leadership. Loyalty becomes captivity; safety becomes surveillance. Release—trust freely given and revocable—proves love and earns allegiance."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Cynicism",
+    "description": "Chronic bad‑faith interpretation that preempts hope. It may protect from disappointment, but it kills coalition—the engine of any durable win. Courage is choosing optimism with eyes open."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Greed",
+    "description": "Overvaluing acquisition at ethical cost. It corrodes reputations and partnerships, making betrayal a business model. The arc turns when value broadens from owning to building."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Fatalism",
+    "description": "Surrender to “fate” that abdicates responsibility. It ensures missed chances for change and makes doom self‑fulfilling. Agency begins the moment the character acts anyway."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Self‑Loathing",
+    "description": "Internal contempt that repels help and sabotages success. It rewrites feedback as proof of worthlessness, not care. Healing requires being seen and accepted, then practicing competence."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Denial",
+    "description": "Refusal to face hard truths (illness, betrayal, limits). It delays action until options narrow to tragedy. The turn is naming reality aloud to allies who can help."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Imprudence",
+    "description": "Taking outsized risks without preparation. It flatters bravery while creating preventable disasters. Tempered risk—scoped, staged, insured—keeps valor from becoming vanity."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Manipulativeness",
+    "description": "Treating relationships as levers rather than bonds. It pays in short‑term wins and long‑term loneliness. Trust, once spent this way, is expensive to rebuy."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Short‑Sightedness",
+    "description": "Optimizing today while mortgaging tomorrow. It yields pyrrhic victories and strategic regret. The antidote is a horizon—legacy questions that shape choices."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Envy",
+    "description": "Resenting others’ success and turning collaboration into rivalry. It drains energy from building to tallying. Gratitude and distinctive goals blunt the poison."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Apathy",
+    "description": "Emotional disengagement that starves causes and people. It makes the character dead weight until shock or love reignites purpose. Commitment must be chosen, not drifted into."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Intransigence",
+    "description": "Refusal to negotiate even when interests align. It kills diplomatic paths and forces costly collisions. Strength is measured by outcomes, not obstinacy."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Cruelty",
+    "description": "Willingness to inflict pain for control or pleasure. It cements villainy and forecloses redemption. Empathy training is too late; only accountability constrains it."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Shame",
+    "description": "A belief in unworthiness that hides behind masks. It fuels secrets and isolation until witnessed and accepted. Self‑respect grows from kept promises, not perfection."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Jeer‑Driven Humor",
+    "description": "Barbed wit that keeps others at arm’s length. It wins laughs while hollowing trust. Vulnerability, not punchlines, builds intimacy."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Oath‑Bound Inflexibility",
+    "description": "Sacred promises obeyed despite changing contexts. Noble in intent, it pits loyalty against wisdom and often ends in sacrifice. Re‑oathing with nuance is the path forward."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Forbidden‑Knowledge Hunger",
+    "description": "Pursuit of truths that corrupt or endanger. It suits magicians and scholars and scales stakes to civilizations. Guardrails—purpose, peers, and pauses—keep curiosity from becoming catastrophe."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Complacency",
+    "description": "Comfort with the status quo that ignores rot. It resists necessary change until collapse forces it violently. Wakefulness restores stewardship before crisis."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Indecision",
+    "description": "Chronic hesitation that misses windows of opportunity. It drains confidence in leaders and lovers alike. Clarity of values makes decisive action possible."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Procrastination",
+    "description": "Delaying the hard work until crisis compresses choices. It forces shortcuts, invites error, and harms reputation for reliability. Systems beat willpower; build them."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Hedonism",
+    "description": "Pursuit of pleasure at the cost of duty. It jeopardizes protector or justice motivations and invites scandal. Integration—making space for joy without betrayal—matures desire."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "People‑Pleasing",
+    "description": "Chasing approval over principle. It compromises strategy and self‑respect, and makes the character easy to capture socially. Saying no is a form of self‑definition."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Conflict Avoidance",
+    "description": "Fear of confrontation that lets problems metastasize. It sacrifices long‑term health for short‑term comfort. The first hard talk is the cheapest."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Overtrusting",
+    "description": "Granting confidence without verification. It invites infiltration and exploitation, especially against cunning antagonists. Trust is not a feeling; it’s a policy."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Tunnel Vision",
+    "description": "Fixation on one objective that misses flanking threats. It pairs poorly with strategist allies and ends in ambush. Widen the frame; add scouts."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Magical Thinking",
+    "description": "Preferring superstition or signs over evidence. It distorts decisions and empowers charlatans. Test, measure, and falsify—then believe."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Unexamined Traditionalism",
+    "description": "Clinging to inherited ways regardless of harm. It blocks reform arcs and marginalizes the vulnerable. Honor the roots by pruning the rot."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Risk Aversion",
+    "description": "Avoiding uncertainty so completely that opportunity never arrives. Security becomes a cage; the safest option is decay. Small, repeated bets rebuild courage."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Grandiosity",
+    "description": "Inflated belief in destiny or genius that demands exceptions. It treats others as extras in one’s story and brooks no limits. Humility is reality’s invitation to partnership."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Over‑Sanctimony",
+    "description": "Flaunting moral superiority to police others. It alienates allies and dares fate to expose hypocrisy. Quiet integrity persuades; posing repels."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Emotional Withholding",
+    "description": "Refusing to share feelings or needs. It starves intimacy and forces mind‑reading that always fails. Naming the need repairs the bond."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Suspicion",
+    "description": "Defaulting to ulterior‑motive assumptions. Prudence without warmth freezes coalitions. Assume goodwill until contradicted—then respond proportionally."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Masochism",
+    "description": "Seeking or tolerating suffering as proof of worth. It invites exploitation and confuses loyalty with self‑harm. Healthy love includes limits."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Opportunism",
+    "description": "Switching loyalties for advantage. It wins short‑term position and loses long‑term trust. Choose a hill and stand on it."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Impulsiveness",
+    "description": "Acting on feeling before thought. Sometimes brilliant, usually costly; the bill is paid in preventable harm. Insert pause rituals before plunges."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Guilt‑Fixation",
+    "description": "Compulsively self‑punishing for past harm. It blocks forward motion and rejects forgiveness offered. Making amends is action, not self‑erasure."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Isolationism",
+    "description": "Withdrawing from community to avoid vulnerability. It preserves safety while starving growth and insight. The right few allies beat perfect solitude."
+  },
+  {
+    "category": "fatal_flaw",
+    "label": "Fickleness",
+    "description": "Rapid shifts in taste, allegiance, or mood. It creates chaos and makes promises meaningless. Consistency—kept small commitments—redeems volatility."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Arrogant",
+    "description": "Inflates self-worth and discounts others, provoking external resistance and blinding strategy; pairs disastrously with leadership roles and has a straight line to hubristic destiny."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Cowardly",
+    "description": "Avoids danger at any cost, undermining trust and forcing others to carry risk; creates acute internal conflict when motivation demands courage (e.g., to protect a loved one)."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Reckless",
+    "description": "Acts without weighing consequences, producing pyrrhic wins; clashes with meticulous teammates and escalates external conflict unnecessarily."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Manipulative",
+    "description": "Engineers outcomes by exploiting people; invaluable to spies and merchants yet corrodes reputation and relationships; secrets are both tools and liabilities."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Vindictive",
+    "description": "Pursues payback at the expense of all else, warping motivation and endangering allies; destiny trends toward tragedy unless checked by forgiveness."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Jealous",
+    "description": "Fears loss of affection or status, breeding sabotage and deceit; often triggered by secrets and inflamed by reputation shifts."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Deceitful",
+    "description": "Habitually lies, fracturing trust; useful in covert occupations but lethal to leadership cohesion when revealed."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Greedy",
+    "description": "Overvalues acquisition, compromising ethics and alliances; external conflicts over resources intensify; internal emptiness persists."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Dogmatic",
+    "description": "Clings to doctrine despite evidence, creating brittle decision-making; collides with open‑minded teammates and adaptive strategy."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Intemperate",
+    "description": "Lacks moderation (anger, lust, spending), inviting scandal and blackmail; plays directly into antagonist traps."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Impulsive",
+    "description": "Jumps to action on emotion, bypassing planning; occasionally yields brilliance but more often magnifies stakes unnecessarily."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Pessimistic",
+    "description": "Expects the worst, sapping morale and missing opportunities; can be protective in high‑risk contexts but often self‑fulfilling."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Perfectionist",
+    "description": "Sets unattainable standards that stall progress and erode teams; pairs toxicly with creator/engineer archetypes without humility."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Callous",
+    "description": "Numbs empathy, enabling cruelty or neglect; effective in brutal settings, but reputationally radioactive."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Hypocritical",
+    "description": "Preaches values they won’t practice, detonating credibility when secrets inevitable surface; devastating for priests, judges, and leaders."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Envious",
+    "description": "Covets others’ success, turning collaboration into rivalry; may drive growth but often curdles into sabotage."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Naïve",
+    "description": "Misreads danger and manipulation, risking self and group; a transitional flaw for innocents on coming‑of‑age arcs."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Apathetic",
+    "description": "Lacks concern or motivation, stalling plots until external pressure forces movement; corrosive to group dynamics."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Cynical",
+    "description": "Assumes bad faith, poisoning trust; may sharpen analysis but often prevents alliance-building crucial to victory."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Stubborn",
+    "description": "Refuses to shift stance despite new data; steady under fire but brittle when wrong, endangering outcomes."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Overbearing",
+    "description": "Dominates and micromanages, suffocating initiative; especially harmful in leadership roles."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Paranoid",
+    "description": "Sees threats everywhere, creating self-fulfilling betrayals; secrets and espionage arcs intensify this flaw."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Vain",
+    "description": "Seeks admiration over substance, misallocating effort and exposing to manipulation; reputation obsession trumps real stakes."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Indecisive",
+    "description": "Delays commitments, missing windows of opportunity; breeds frustration in urgent external conflicts."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Ruthless",
+    "description": "Discards ethics to achieve goals; effective against monsters and tyrants, but the cost to soul and team is severe."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Gullible",
+    "description": "Over‑trusts appearances, becoming a gateway for antagonist plots; pairs poorly with detective roles."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Spiteful",
+    "description": "Harms others even at own cost; escalates interpersonal wars that distract from main conflicts."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Obsessive",
+    "description": "Fixates on one aim, corroding health and relationships; can deliver breakthroughs at catastrophic personal price."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Miserly",
+    "description": "Hoarding erodes goodwill and resilience; backfires in crises requiring mutual aid."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Bigoted",
+    "description": "Devalues groups based on identity, destroying alliances and legitimacy; external conflict often exposes and punishes this flaw."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Fanatical",
+    "description": "Pursues belief with absolute zeal, immune to compromise; powerful in movements but prone to atrocity."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Lazy",
+    "description": "Avoids exertion, shifting burdens to others; in high‑stakes arcs, becomes untenable and forces reckonings."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Masochistic",
+    "description": "Seeks or tolerates suffering, confusing loyalty with self‑harm; invites exploitation by antagonists."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Martinet",
+    "description": "Enforces rules without judgment, crushing morale; brittle in fluid battlefields and diplomacy."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Petty",
+    "description": "Fixates on small slights, derailing strategy over trivialities; reputationally corrosive."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Resentful",
+    "description": "Nurtures grudges that warp teamwork; easily weaponized by a savvy antagonist."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Secretive",
+    "description": "Withholds information reflexively, even when trust would serve; amplifies paranoia and fractures teams."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Short‑tempered",
+    "description": "Flashes to anger, escalating minor sparks into conflagrations; exploitable via provocation."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Superstitious",
+    "description": "Misattributes causes and seeks magical fixes, sabotaging rational plans; manipulable by charlatans."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Two‑faced",
+    "description": "Acts differently for different audiences, beyond healthy code‑switching; when exposed, destroys reputation capital."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Wasteful",
+    "description": "Burns resources imprudently, weakening long‑term position; often paired with impulsiveness or vanity."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Withdrawn",
+    "description": "Retreats from engagement, starving teams of input and bonding; sometimes a trauma shield that must be healed."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Workaholic",
+    "description": "Overworks to avoid feelings, eroding judgment and relationships; appears virtuous until collapse."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Anxious",
+    "description": "Anticipates catastrophe, impairing performance; can sharpen preparation but requires support."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Cruel",
+    "description": "Inflicts pain for control or amusement; cements villain status and forecloses redemptive destinies."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Delusional",
+    "description": "Clings to false beliefs, making them dangerous and unpredictable; secrets and reputations become unstable."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Dishonorable",
+    "description": "Breaks oaths lightly, destroying legitimacy; in oath‑bound cultures, this is a social death."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Egotistical",
+    "description": "Centers self in all narratives; impossible collaborator unless humbled by events."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Fickle",
+    "description": "Changes allegiance or taste rapidly, creating chaos; difficult to rely upon in critical arcs."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Gloomy",
+    "description": "Radiates despair that demoralizes allies; in horror, may be accurate but still harmful to cohesion."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Hard‑hearted",
+    "description": "Rejects appeals to mercy, making negotiations brittle; simplifies decisions at the cost of humanity."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Hot‑headed",
+    "description": "Rushes into fights, predictable and provokable; useful for enemies."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Hypercritical",
+    "description": "Nitpicks and demeans, stifling creativity; undermines creators and innovators."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Ignorant",
+    "description": "Lacks essential knowledge and resists learning; survivable if humble, deadly if proud."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Impish",
+    "description": "Mischief without wisdom, burning bridges for laughs; fun in low stakes, fatal in high stakes."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Inflexible",
+    "description": "Cannot adapt, breaking under novelty; defeats strategists’ plans from the inside."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Insensitive",
+    "description": "Misses emotional cues, harming relationships; fixable with awareness and empathy training."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Intolerant",
+    "description": "Cannot abide difference; collapses diverse coalitions and invites righteous opposition."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Irresponsible",
+    "description": "Evades accountability, breeding chaos; antagonists capitalize on the blame vacuum."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Melodramatic",
+    "description": "Inflates events for attention, distracting from substance; reputationally undermining."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Negligent",
+    "description": "Fails duties through inattention; devastating in guardian/healer roles."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Prideful",
+    "description": "Rejects help and feedback; classical path to downfall absent humility."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Reclusive",
+    "description": "Hides from community, starving self of support; sometimes necessary in fugitive arcs, often isolating."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Sanctimonious",
+    "description": "Flaunts moral superiority; alienates allies and invites tests that expose hypocrisy."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Self‑pitying",
+    "description": "Fixates on own suffering; drains teams and stalls growth until reframed."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Scheming",
+    "description": "Plots constantly, treating people as pieces; brilliant in chessboard politics, ruinous in trust‑based teams."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Suspicious",
+    "description": "Assumes ulterior motives, blocking coalition; can be prudent in espionage, corrosive elsewhere."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Thuggish",
+    "description": "Uses intimidation by default; effective short‑term, strategic dead‑end long‑term."
+  },
+  {
+    "category": "negative_trait",
+    "label": "Waste‑averse",
+    "description": "Hoarding to a fault, missing opportunities that require investment; opposite of wasteful yet equally limiting."
+  }
+]

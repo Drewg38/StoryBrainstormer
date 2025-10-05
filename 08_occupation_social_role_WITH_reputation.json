@@ -1,0 +1,322 @@
+[
+  {
+    "label": "Healer (Physician/Herbalist)",
+    "description": "Restores bodies and morale under scarcity. Aligns with compassion and healing motivations, but risks burnout and martyr complex; reputation swings between saint and quack depending on outcomes and politics."
+  },
+  {
+    "label": "Mercenary",
+    "description": "Sells skill at arms to patrons. Clarifies wealth and survival motivations and tests honor under conflicting contracts; reputation is transactional and fragile."
+  },
+  {
+    "label": "Priest/Cleric",
+    "description": "Mediates the sacred and the social. Balances faith and order with real‑world power; hypocrisy or fanaticism can explode institutions."
+  },
+  {
+    "label": "Thief",
+    "description": "Specializes in acquisition without consent. Marries freedom and survival motivations to secrets and social reading; reputation is folk hero or parasite by audience."
+  },
+  {
+    "label": "Noble (Courtier/Patrician)",
+    "description": "Wields status capital rather than labor. Legacy and reputation become plot engines; destiny arcs test stewardship vs. decadence."
+  },
+  {
+    "label": "Spy",
+    "description": "Trades in information and misdirection. Truth and loyalty are constantly stress‑tested; unmasking is an ever‑present risk."
+  },
+  {
+    "label": "Soldier/Guard",
+    "description": "Holds lines between order and chaos. Honor and protection center the arc; institutional rot creates moral injury and internal conflict."
+  },
+  {
+    "label": "Ranger/Scout",
+    "description": "Operates between wilds and walls. Discovery and stewardship motivations mesh with adaptation; isolation is both asset and flaw."
+  },
+  {
+    "label": "Artisan/Craftsperson",
+    "description": "Creates useful or beautiful goods. Anchors legacy and mastery motivations; conflict arrives via scarcity, guild politics, or theft."
+  },
+  {
+    "label": "Merchant/Factor",
+    "description": "Brokers goods, routes, and influence. Wealth and progress meet ethics at scale; reputation hinges on fairness vs. exploitation."
+  },
+  {
+    "label": "Judge/Magistrate",
+    "description": "Arbitrates competing claims. Justice motives face secrets and pressure; rigidity or bias imperils legitimacy."
+  },
+  {
+    "label": "Assassin",
+    "description": "Kills to contract or cause. Justice and revenge blur; destiny squeezes conscience until something breaks—often the assassin."
+  },
+  {
+    "label": "Scholar/Lecturer",
+    "description": "Generates and transmits knowledge. Curiosity and legacy drift toward hubris when unmoored; stakes rise when truth threatens power."
+  },
+  {
+    "label": "Engineer/Tinkerer",
+    "description": "Solves material problems elegantly. Progress and mastery collide with resource and political limits; success redraws power maps."
+  },
+  {
+    "label": "Bard/Performer",
+    "description": "Shapes morale and memory. Reputation is livelihood; truth vs. embellishment is an ongoing ethical duel."
+  },
+  {
+    "label": "Smuggler",
+    "description": "Moves forbidden goods and people. Freedom and protection clash with law; reputation depends on whether the law serves justice."
+  },
+  {
+    "label": "Diplomat",
+    "description": "Trades words for peace or leverage. Unity and balance define success; secrets and appeasement are occupational hazards."
+  },
+  {
+    "label": "Sailor/Navigator",
+    "description": "Lives at the mercy of elements and charts. Discovery and survival motivations, chosen‑family dynamics, and shipboard law shape arcs."
+  },
+  {
+    "label": "Hunter/Tracker",
+    "description": "Feeds communities or culls threats. Protection motives meet ethical lines about what is deemed prey and who decides."
+  },
+  {
+    "label": "Inquisitor/Inspector",
+    "description": "Investigates heresy or crime with mandate. Truth and order risk cruelty without checks; reputation terrifies or reassures."
+  },
+  {
+    "label": "Alchemist",
+    "description": "Experiments at the edge of taboo. Transcendence and progress motivations meet forbidden‑knowledge hunger; outcomes can be civilization‑shaking."
+  },
+  {
+    "label": "Courtesan/Companion",
+    "description": "Navigates intimacy as craft and commerce. Security and agency motivations clash with stigma; information is a secondary currency."
+  },
+  {
+    "label": "Archivist/Chronicler",
+    "description": "Keeps memory against decay or propaganda. Truth and legacy contend with censorship; reputation flips with regimes."
+  },
+  {
+    "label": "Warden/Jailer",
+    "description": "Holds bodies and secrets. Order and security motivations, frequent moral injury; arcs ask what justice actually is."
+  },
+  {
+    "label": "Explorer/Cartographer",
+    "description": "Expands known edges. Discovery and glory motivate; colonial ethics and risk shadow every map."
+  },
+  {
+    "label": "Farmer/Agrologist",
+    "description": "Feeds civilizations. Stewardship and security motives; conflict rises from weather, pests, policy, and war’s requisitions."
+  },
+  {
+    "label": "Blacksmith/Armorer",
+    "description": "Makes the tools of survival and war. Legacy and pride motives; ethical weight of arming tyrants vs. rebels."
+  },
+  {
+    "label": "Monk/Ascetic",
+    "description": "Seeks clarity through discipline. Faith and transcendence motivate; rigidity or denial are ever‑present snares."
+  },
+  {
+    "label": "Detective/Investigator",
+    "description": "Reconstructs truth from fragments. Truth and justice collide with secrets; obsession is a constant hazard."
+  },
+  {
+    "label": "Guildmaster",
+    "description": "Orchestrates craftspeople and markets. Legacy and power motives; the character embodies the system they built and must choose reform or exploitation."
+  },
+  {
+    "label": "Tavern‑Keeper/Innkeeper",
+    "description": "Community node and rumor hub. Belonging and wealth motives; neutrality is fragile once stakes rise."
+  },
+  {
+    "label": "Herald/Messenger",
+    "description": "Carries news and treaties across borders. Unity and trust motives; reputation as reliable becomes the true passport."
+  },
+  {
+    "label": "Architect/City‑Planner",
+    "description": "Shapes how people live together. Progress and legacy motives; politics and disasters test ethics at scale."
+  },
+  {
+    "label": "Beast‑Keeper/Falconer",
+    "description": "Bonds with the non‑human. Protection and nature motives; empathy extends beyond people, complicating choices in war."
+  },
+  {
+    "label": "Relic‑Keeper/Curator",
+    "description": "Guards potent artifacts or histories. Order and legacy motives; secrets about provenance are live wires."
+  },
+  {
+    "label": "Scout‑Courier (Runner/Rider)",
+    "description": "Speed as service. Duty and glory motives; arcs hinge on endurance, trust, and the message that must get through."
+  },
+  {
+    "label": "Scribe/Calligrapher",
+    "description": "Turns speech into record and art. Legacy and beauty motives; literacy is power, censorship the antagonist."
+  },
+  {
+    "label": "Shipwright",
+    "description": "Builds the means of exploration and commerce. Progress and security motives; every launch is a bet against chaos."
+  },
+  {
+    "label": "Apothecary/Poisoner",
+    "description": "Two faces of chemistry. Healing and power motives; ethics hinge on consent and context."
+  },
+  {
+    "label": "Forester/Game Warden",
+    "description": "Mediates human‑wild boundaries. Stewardship motives; conflict is poachers, politics, and climate."
+  },
+  {
+    "label": "Teacher/Tutor",
+    "description": "Shapes the next generation one mind at a time. Belief in others and legacy motives; impact measured in students, not applause."
+  },
+  {
+    "label": "Quartermaster",
+    "description": "Allocates scarce resources fairly. Security and justice motives; corruption tempts, transparency protects."
+  },
+  {
+    "label": "Miner/Prospector",
+    "description": "Digs wealth from darkness. Wealth and discovery motives; hazards externalize greed’s costs."
+  },
+  {
+    "label": "Banker/Usurer",
+    "description": "Turns trust into capital. Security and power motives; reputation hinges on fairness versus predation."
+  },
+  {
+    "label": "Courier Guild Dispatcher",
+    "description": "Moves people, packets, and secrets. Unity and logistics motives; a wrong route can start a war."
+  },
+  {
+    "label": "Arena Promoter",
+    "description": "Profits from spectacle. Wealth and glory motives; ethics wobble under blood and cheers."
+  },
+  {
+    "label": "City Watch Captain",
+    "description": "Frontline of civic order. Justice and order motives; politics squeeze from above while crime pushes from below."
+  },
+  {
+    "label": "Brewer/Winemaker",
+    "description": "Ferments culture and community. Craft and belonging motives; temperance advocates and scarcity test resolve."
+  },
+  {
+    "label": "Street Orator/Agitator",
+    "description": "Turns crowd into movement. Equality and revolution motives; reputation depends on what follows the speech."
+  },
+  {
+    "label": "Undertaker/Mortician",
+    "description": "Steward of endings and memory. Dignity and service motives; secrets surface when the dead cannot speak."
+  },
+  {
+    "label": "Beloved",
+    "description": "The character enjoys broad affection earned through visible service or charisma. Beloved status grants social capital but raises stakes when secrets or flaws threaten the image. Destiny often tests whether they protect the people who love them or the persona those people adore."
+  },
+  {
+    "label": "Revered",
+    "description": "Venerated as more-than-mortal (saint, champion, founder), they inspire obedience—and brittle expectations. Reverence amplifies any fall from grace and attracts zealots and opportunists alike. Internal conflict centers on humility versus the weight of symbolhood."
+  },
+  {
+    "label": "Respected",
+    "description": "A reputation for competence and fairness creates durable trust across factions. Respect smooths negotiations yet pressures the character to avoid risk that might tarnish reliability. Conflicts force a choice between safe adequacy and bold transformation."
+  },
+  {
+    "label": "Trusted",
+    "description": "Known for keeping confidences and commitments, they become a keystone in networks. Trust grants access to secrets and high-stakes roles but turns any lapse into systemic collapse. Flaws like compulsive secrecy or people-pleasing either strengthen or shatter this status."
+  },
+  {
+    "label": "Honorable",
+    "description": "Publicly aligned with a code, they are predictably principled—and predictable to adversaries. Honor legitimizes authority yet complicates compromises necessary for peace. Destiny hinges on whether the code serves people or pride."
+  },
+  {
+    "label": "Feared",
+    "description": "Their name travels ahead as threat or inevitability. Fear compels compliance but breeds sabotage and isolation; love becomes suspect. Redemption arcs must convert terror into respect without losing deterrence."
+  },
+  {
+    "label": "Infamous",
+    "description": "Notorious for a scandal or crime, they carry the magnetic stigma of transgression. Infamy grants leverage among outlaws and media but blocks institutional routes. Secrets about context or guilt can invert the label—or seal it."
+  },
+  {
+    "label": "Notorious",
+    "description": "Famous for spectacle more than substance, they command attention but shallow loyalty. The reputation invites manipulation by flatterers and opportunists. Destiny tests whether they grow depth or double down on the show."
+  },
+  {
+    "label": "Underestimated",
+    "description": "Dismissed as harmless or minor, they operate beneath notice. This grants tactical freedom but starves them of resources until a reveal. Breakout moments pivot the narrative and redraw power maps."
+  },
+  {
+    "label": "Overlooked",
+    "description": "Invisible due to class, role, or bias, they witness what others miss. Overlooked status breeds both resentment and patience, making them potent truth-tellers. Recognition forces renegotiation with the world and with self-worth."
+  },
+  {
+    "label": "Pariah",
+    "description": "Socially exiled for taboo or alleged betrayal, they live at civilization’s edges. Pariah status hardens self-reliance and forges unlikely coalitions among the discarded. Destiny asks if they return as reformer, avenger, or founder elsewhere."
+  },
+  {
+    "label": "Scapegoated",
+    "description": "Official blame shields the powerful while staining the innocent. This reputation bends motivations toward truth-telling, justice, or survival. Exoneration arcs must show receipts, not rhetoric."
+  },
+  {
+    "label": "Misunderstood",
+    "description": "Motives read wrong, methods misread, they bleed from friendly fire. Misunderstanding complicates alliances and encourages secrecy as self-defense. Clarifying acts risk vulnerability but unlock their true coalition."
+  },
+  {
+    "label": "Mysterious",
+    "description": "A cultivated opacity—masks, aliases, ritual silence—turns them into a riddle. Mystery protects from prejudice and creates allure, but it chokes trust. The reveal must be worth the suspense."
+  },
+  {
+    "label": "Legendary",
+    "description": "Stories about them inflate beyond fact, making the present compete with myth. Legendary status recruits followers and enemies shaped by tales rather than truth. The arc asks whether the person can edit their own legend."
+  },
+  {
+    "label": "Disgraced",
+    "description": "A public failure or revealed hypocrisy toppled their standing. Disgrace forces reinvention or flight; institutions weaponize it to erase prior good. Redemption demands changed habits, not polished narratives."
+  },
+  {
+    "label": "Dishonored",
+    "description": "Oath broken, banner stained, their name is a warning. The character confronts a choice: reclaim the code, rewrite it, or abandon it entirely. Every handshake tests whether trust can be rehabilitated."
+  },
+  {
+    "label": "Untested",
+    "description": "Bright promise without proof, they are invested with hope and skepticism in equal measure. First trials define the narrative strongly, for good or ill. Mentors and saboteurs both rush to shape them."
+  },
+  {
+    "label": "Prodigy",
+    "description": "Mastery arrived early, warping expectations and social age. Pressure to keep dazzling breeds perfectionism and isolation. The arc weighs excellence against humanity."
+  },
+  {
+    "label": "Charlatan",
+    "description": "An expert at feigned expertise; their brand is borrowed certainty. Charisma yields quick wins while truth accrues compound interest against them. Unmasking is inevitable; the question is whether they pivot to honesty."
+  },
+  {
+    "label": "Reformed",
+    "description": "Publicly turned from a past vice or crime, they carry both testimony and suspicion. Reformed status opens doors to heal or to grift; every stumble is judged as relapse. Accountability structures determine endurance."
+  },
+  {
+    "label": "Reluctant Icon",
+    "description": "Elevated against their will by luck or symbol hunger, they resist the pedestal. The reputation grants reach while threatening authenticity. The arc explores stewardship without surrendering self."
+  },
+  {
+    "label": "Folk Hero",
+    "description": "Claimed by the commons, not the court; songs carry their name farther than decrees. Folk acclaim protects and endangers, depending on who governs. Destiny asks whether they stay street-side or accept institutional power."
+  },
+  {
+    "label": "Outcast Visionary",
+    "description": "Ideas run ahead of acceptance, and exile follows. They attract the curious and repel the comfortable. Time—or a catalyzing crisis—proves them prophet or crank."
+  },
+  {
+    "label": "Holy Figure",
+    "description": "Aura of sanctity, real or projected, grants moral leverage. Temptations include control, hypocrisy, or gullibility toward flatterers. Testing comes when miracles fail or politics bite."
+  },
+  {
+    "label": "Heretic",
+    "description": "Named dangerous for ideas or alliances, they split communities. Heresy can be truth before its time—or rot glamorized. The arc hinges on evidence and outcomes."
+  },
+  {
+    "label": "Patriot",
+    "description": "Reputation tied to service of a nation or cause. Patriotism legitimizes sacrifice but blinds to sins done in the flag’s name. Conflict tests loyalty to people over symbols."
+  },
+  {
+    "label": "Traitor",
+    "description": "Branded as betrayer—sometimes correctly, often conveniently. The mark endures beyond courts and wars; family inherits it. Reframing requires exposing the larger betrayal they resisted—or accepting the role fully."
+  },
+  {
+    "label": "Shadow Broker",
+    "description": "Known for trading favors and secrets, not ideals. Their reputation buys access while taxing trust. The story asks whether they’ll spend that capital on something larger than themselves."
+  },
+  {
+    "label": "Lucky",
+    "description": "Fortunate beyond the curve, they attract envy and risk. Luck covers sloppiness until it doesn’t; then reputation flips faster than skill can compensate. Maturity means building systems that don’t require miracles."
+  }
+]
