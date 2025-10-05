@@ -1,7 +1,8 @@
 /* Cool Character Brainstormer — app.js (complete, 9 reels, self-initializing)
-   - Classic global (no modules). Exposes window.Brainstormer.init()
-   - Loads JSON from your repo (pinned commit + main, jsDelivr + raw GH)
-   - Inline fallback arrays if network blocked
+   - Works with the HTML above (IDs must match)
+   - Loads your JSON arrays from GitHub (pinned + main; jsDelivr + raw GH)
+   - Falls back to INLINE_DATA if network/CSP blocks
+   - Includes touch→wheel bridge for mobile scrubbing
 */
 
 (function () {
@@ -24,7 +25,8 @@
   }
 
   /* ---------------------- DATA SOURCES ---------------------- */
-  const PINNED = 'b739578b5774a58e8e6ef6f11cad019b9fefd6e6'; // from your links
+  // Use the commit from your links; will also try main.
+  const PINNED = 'b739578b5774a58e8e6ef6f11cad019b9fefd6e6';
   const REMOTE_BASES = [
     `https://cdn.jsdelivr.net/gh/Drewg38/StoryBrainstormer@${PINNED}/`,
     `https://raw.githubusercontent.com/Drewg38/StoryBrainstormer/${PINNED}/`,
@@ -82,6 +84,40 @@
       status(`Loaded ${m.file} (${out[m.key].length})`);
     }
     return out;
+  }
+
+  /* ---------------------- TOUCH→WHEEL BRIDGE ---------------------- */
+  function installTouchWheelBridge(selector,{scale=2.4,threshold=0.8}={}){
+    const els = document.querySelectorAll(selector);
+    els.forEach(el=>{
+      let y0=null, acc=0;
+      const slot = el.closest('.slot');
+
+      el.addEventListener('touchstart', (e)=>{
+        if(slot && slot.classList.contains('locked')) return;
+        y0 = e.touches[0].clientY; acc=0;
+      }, {passive:true});
+
+      el.addEventListener('touchmove', (e)=>{
+        if(slot && slot.classList.contains('locked')) return;
+        if(y0==null) return;
+        e.preventDefault();
+        const y = e.touches[0].clientY;
+        const dy = y - y0;
+        acc += dy;
+        y0 = y;
+        const step = threshold*10;
+        if(Math.abs(acc) >= step){
+          const delta = -acc * scale;
+          acc = 0;
+          const wheel = new WheelEvent('wheel',{deltaY:delta,bubbles:true,cancelable:true});
+          el.dispatchEvent(wheel);
+        }
+      }, {passive:false});
+
+      el.addEventListener('touchend',   ()=>{ y0=null; acc=0; }, {passive:true});
+      el.addEventListener('touchcancel',()=>{ y0=null; acc=0; }, {passive:true});
+    });
   }
 
   /* ---------------------- REELS ---------------------- */
@@ -235,6 +271,22 @@
       $(btns.fast )?.addEventListener('click', spinAll);
       $(btns.manual)?.addEventListener('click', ()=> $$('.slot.locked').forEach(s=>s.classList.remove('locked')));
       $(btns.lock )?.addEventListener('click', ()=> { Object.values(reels).forEach(r=>r && r.snapTo(r.index,0)); $$('.slot').forEach(s=>s.classList.add('locked')); });
+
+      // Touch bridge (all nine viewports)
+      installTouchWheelBridge(
+        [
+          '#reel_archetype .viewport',
+          '#reel_positive .viewport',
+          '#reel_motivation .viewport',
+          '#reel_flaw .viewport',
+          '#reel_destiny .viewport',
+          '#reel_occupation .viewport',
+          '#reel_secret .viewport',
+          '#reel_external .viewport',
+          '#reel_internal .viewport'
+        ].join(','),
+        {scale:2.4, threshold:0.8}
+      );
 
       renderConcept(picks);
       window.addEventListener('resize', ()=> Object.values(reels).forEach(r=>r && r.measure()));
