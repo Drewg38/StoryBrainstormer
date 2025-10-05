@@ -1,20 +1,18 @@
 /* Cool Character Brainstormer — 9 reels (classic script, no modules)
    Exposes: window.Brainstormer.init({ els:{buttons:{...}, reels:{...}, concept:'#concept', dataStatus:'#dataStatus'}, touch:{scale,threshold} })
-   What it does:
-   - Loads 9 JSON lists from your StoryBrainstormer repo (pinned commit, with fallbacks)
-   - Builds 9 momentum-scrolling reels and keeps the “center” item selected
-   - Buttons: Slow Spin / Spin / Fast Spin / Manual Set / Stop & Lock
-   - Updates the Concept panel (badges + one-liner) whenever a reel pick changes
+   Self-inits on DOMContentLoaded if you don't call it yourself.
 */
-
 (function () {
   'use strict';
 
-  /* ---------- CONFIG: your 9 lists (pinned commit) ---------- */
+  /* ---------- CONFIG: your 9 lists (pinned commit + fallbacks) ---------- */
   const RAW_BASES = [
-    // Pinned commit first (fast + stable), then main as fallback
+    // Pinned commit (fast + stable)
     'https://raw.githubusercontent.com/Drewg38/StoryBrainstormer/b739578b5774a58e8e6ef6f11cad019b9fefd6e6/',
-    'https://raw.githubusercontent.com/Drewg38/StoryBrainstormer/main/'
+    'https://cdn.jsdelivr.net/gh/Drewg38/StoryBrainstormer@b739578b5774a58e8e6ef6f11cad019b9fefd6e6/',
+    // Main branch fallbacks
+    'https://raw.githubusercontent.com/Drewg38/StoryBrainstormer/main/',
+    'https://cdn.jsdelivr.net/gh/Drewg38/StoryBrainstormer@main/'
   ];
 
   const LISTS = [
@@ -42,7 +40,6 @@
         const res = await fetch(base + path, { cache: 'no-cache' });
         if (!res.ok) throw new Error('HTTP ' + res.status);
         const data = await res.json();
-        // normalize items to strings
         return data.map(x => typeof x === 'string' ? x : (x.label || x.value || JSON.stringify(x)));
       } catch (e) { lastErr = e; }
     }
@@ -68,7 +65,6 @@
 
   /* ---------- Reel builder (momentum scroll, snap to center) ---------- */
   function buildReel(slotEl, items, opts) {
-    // structure expected by your HTML: .slot > .viewport > .list.reel
     const vp    = $('.viewport', slotEl);
     const strip = $('.list.reel', slotEl);
     strip.innerHTML = items.map(t => `<div class="rowitem">${escapeHtml(t)}</div>`).join('');
@@ -79,7 +75,7 @@
     function measure() {
       viewH  = vp.clientHeight;
       totalH = rows.reduce((s, n) => s + n.offsetHeight, 0);
-      clampY(); apply(); // keep current y valid after layout changes
+      clampY(); apply();
     }
     function clampY() { const min = Math.min(0, viewH - totalH); y = clamp(y, min, 0); }
     function apply()  { strip.style.transform = `translateY(${y}px)`; markCenter(); }
@@ -109,7 +105,7 @@
     }
 
     function fling() {
-      const speed = clamp(vy * 1000, -2000, 2000);  // px/s
+      const speed = clamp(vy * 1000, -2000, 2000);
       tweenTo(y + speed * 0.25, opts.fast ? 220 : 380, () => snapTo(api.index));
     }
 
@@ -117,14 +113,14 @@
       const start = performance.now(), from = y, dur = Math.max(60, ms | 0);
       function frame(ts) {
         const t = clamp((ts - start) / dur, 0, 1);
-        const k = 1 - (1 - t) * (1 - t); // ease-out quad
+        const k = 1 - (1 - t) * (1 - t);
         y = from + (target - from) * k; clampY(); apply();
         if (t < 1) requestAnimationFrame(frame); else onEnd && onEnd();
       }
       requestAnimationFrame(frame);
     }
 
-    // Pointer (mouse/touch) interactions
+    // Pointer interactions
     vp.addEventListener('pointerdown', e => {
       if (slotEl.classList.contains('locked')) return;
       dragging = true; vp.setPointerCapture(e.pointerId);
@@ -149,7 +145,6 @@
       api._wheelTO = setTimeout(() => snapTo(api.index), 140);
     }, { passive: false });
 
-    // API
     const api = {
       value: null,
       index: 0,
@@ -159,15 +154,12 @@
       onPick: null
     };
 
-    // First layout & initial pick
     measure();
     api.random();
 
-    // Re-measure on fonts load just in case
     if (document.fonts && document.fonts.ready) {
       document.fonts.ready.then(() => { measure(); snapTo(api.index, 0); });
     }
-
     return api;
   }
 
@@ -177,7 +169,6 @@
       const cfg = config || {};
       const els = cfg.els || {};
 
-      // Default selectors if none were supplied
       const reelSel = Object.assign({
         archetype:         '#reel_archetype',
         positive_trait:    '#reel_positive',
@@ -205,33 +196,22 @@
 
       try {
         say('Loading lists…');
-
-        // Load all lists (with fallback bases)
         const datasets = await Promise.all(LISTS.map(x => fetchJsonWithFallback(x.file)));
 
-        // Build 9 reels
         const reels = {};
         const picks = {};
         LISTS.forEach((meta, i) => {
           const host = $(reelSel[meta.key]);
           if (!host) return;
           const api = buildReel(host, datasets[i], { fast: false });
-          api.onPick = (val) => {
-            picks[meta.key] = val;
-            renderConcept(conceptSel, picks);
-          };
+          api.onPick = (val) => { picks[meta.key] = val; renderConcept(conceptSel, picks); };
           reels[meta.key] = api;
         });
 
-        // Initial concept render
         renderConcept(conceptSel, picks);
         say('');
 
-        /* ---------- Buttons ---------- */
         const spinAll = (speed='normal') => {
-          const ms = speed === 'fast' ? 120 : speed === 'slow' ? 360 : 220;
-          Object.values(reels).forEach(r => r.snapTo(Math.floor(Math.random()*9999)%9999, ms));
-          // Actually random among length:
           Object.values(reels).forEach(r => r.random());
         };
 
@@ -239,18 +219,9 @@
         $(btns.spin)?.addEventListener('click',  ()=> spinAll('normal'));
         $(btns.fast)?.addEventListener('click',  ()=> spinAll('fast'));
 
-        // Manual Set = unlock reels (remove the .locked class so pointer input works)
-        $(btns.manual)?.addEventListener('click', ()=>{
-          $$('.slot.locked').forEach(s => s.classList.remove('locked'));
-        });
+        $(btns.manual)?.addEventListener('click', ()=>{ $$('.slot.locked').forEach(s => s.classList.remove('locked')); });
+        $(btns.lock)?.addEventListener('click',   ()=>{ Object.values(reels).forEach(r => r.snapTo(r.index, 0)); $$('.slot').forEach(s => s.classList.add('locked')); });
 
-        // Stop & Lock = snap all to nearest and lock them
-        $(btns.lock)?.addEventListener('click', ()=>{
-          Object.values(reels).forEach(r => r.snapTo(r.index, 0));
-          $$('.slot').forEach(s => s.classList.add('locked'));
-        });
-
-        // Keep measurements fresh on resize
         window.addEventListener('resize', ()=> Object.values(reels).forEach(r => r.measure()));
 
       } catch (err) {
@@ -281,5 +252,31 @@
     `;
     function badge(v){ return v ? `<span class="badge">${escapeHtml(v)}</span>` : ''; }
   }
+
+  /* ---------- AUTO-INIT (so reels populate without extra HTML code) ---------- */
+  document.addEventListener('DOMContentLoaded', () => {
+    // Only auto-run if the wrapper exists; allows you to opt-out by removing the element.
+    if (document.querySelector('#cbb-root')) {
+      window.Brainstormer.init({
+        els:{
+          buttons:{slow:'#btnSlow',spin:'#btnSpin',fast:'#btnFast',manual:'#btnManual',lock:'#btnLock'},
+          reels:{
+            archetype:'#reel_archetype',
+            positive_trait:'#reel_positive',
+            motivation:'#reel_motivation',
+            fatal_flaw:'#reel_flaw',
+            destiny:'#reel_destiny',
+            occupation:'#reel_occupation',
+            secret:'#reel_secret',
+            external_conflict:'#reel_external',
+            internal_conflict:'#reel_internal'
+          },
+          concept:'#concept',
+          dataStatus:'#dataStatus'
+        },
+        touch:{ scale:2.4, threshold:0.8 }
+      });
+    }
+  });
 
 })();
