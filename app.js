@@ -9,7 +9,7 @@
   'use strict';
 
   /* ---------------------- SWITCHES ---------------------- */
-  const FORCE_INLINE = false; // set true to skip network and use INLINE_DATA only
+  const FORCE_INLINE = true; // set true to skip network and use INLINE_DATA only
   const DEBUG = false;        // set true for verbose console logs
 
   /* ---------------------- DOM HELPERS ---------------------- */
