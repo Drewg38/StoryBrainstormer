@@ -1,26 +1,29 @@
-/* Cool Character Brainstormer — app9.js (self-contained)
-   - 9 reels (3 rows visible) with uniform direction
-   - Spins until Stop & Lock
-   - Concept renders on Stop & Lock
-   - Loads StoryBrainstormer JSON from your pinned commit with fallback
+/* Cool Character Brainstormer — app.js
+   Implements:
+   - 9 reels (archetype → internal_conflict)
+   - Exactly 3 visible rows per reel (windowed rendering)
+   - Uniform wheel/touch direction (wheel down -> next, wheel up -> prev)
+   - Spins until Stop & Lock; concept renders only when locked
+   - Loads your StoryBrainstormer JSON lists from a pinned commit with fallback
 */
 (function(){
   'use strict';
 
-  /* ---------- helpers ---------- */
+  /* ------------------------ helpers ------------------------ */
   const $  = (s, r=document) => r.querySelector(s);
   const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
   const esc = s => String(s ?? '').replace(/[&<>\"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const STATUS = $('#dataStatus');
   const setStatus = (msg)=>{ if(STATUS) STATUS.textContent = msg || ''; };
 
+  // Your pinned data commit (the JSON links you provided earlier)
   const DATA_COMMIT = 'b739578b5774a58e8e6ef6f11cad019b9fefd6e6';
-  const BASES = [
+  const DATA_BASES = [
     `https://cdn.jsdelivr.net/gh/Drewg38/StoryBrainstormer@${DATA_COMMIT}/`,
     `https://raw.githubusercontent.com/Drewg38/StoryBrainstormer/${DATA_COMMIT}/`,
   ];
 
-  const LISTS = [
+  const MAP = [
     { id:'#reel_archetype',  key:'archetype',         file:'01_archetype_role.json' },
     { id:'#reel_positive',   key:'positive_trait',    file:'02_positive_trait.json' },
     { id:'#reel_motivation', key:'motivation',        file:'04_motivation_core_drive.json' },
@@ -45,6 +48,7 @@
   };
 
   function normalizeList(raw){
+    // Accepts arrays of strings or {name: "..."}
     if (Array.isArray(raw)) {
       return raw.map(x=>{
         if (typeof x === 'string') return { name:x };
@@ -73,11 +77,11 @@
   }
 
   async function getJSON(file){
-    for (const b of BASES){
-      try{ return await fetchWithTimeout(b+file, 8000); }
+    for (const base of DATA_BASES){
+      try{ return await fetchWithTimeout(base+file, 8000); }
       catch(_e){}
     }
-    throw new Error('all sources failed for '+file);
+    throw new Error('Data sources failed for '+file);
   }
 
   function windowed(list, center, size=3){
@@ -89,7 +93,7 @@
     return out;
   }
 
-  /* ---------- Reel (3-row, uniform direction) ---------- */
+  /* ------------------------ reel ------------------------ */
   function makeReel(rootEl, items){
     const viewport = rootEl.querySelector('.viewport') || rootEl;
     const listEl   = rootEl.querySelector('.list');
@@ -110,7 +114,7 @@
     render();
 
     function step(dir=+1){
-      dir = dir >= 0 ? +1 : -1;            // normalized
+      dir = dir >= 0 ? +1 : -1;  // normalize
       idx = ((idx + dir) % items.length + items.length) % items.length;
       render();
     }
@@ -119,7 +123,7 @@
       if (locked) return;
       if (spinning) cancelAnimationFrame(raf);
       spinning = true;
-      const cadence = 100 / speed;
+      const cadence = 100 / speed;   // lower = faster
       let last = performance.now(), acc = 0;
       function tick(t){
         if (!spinning) return;
@@ -132,19 +136,19 @@
     function stop(){ spinning=false; cancelAnimationFrame(raf); }
     function lock(v){ locked = (v==null) ? true : !!v; rootEl.classList.toggle('locked', locked); }
 
-    // Uniform wheel: wheel down => next (all reels match)
+    // Wheel: uniform direction for ALL reels (deltaY > 0 => next)
     let accum=0; const STEP=120;
     function onWheel(e){
       if (locked) return;
       e.preventDefault(); e.stopPropagation();
       if (spinning) return;
-      accum += e.deltaY;                   // SAME sign for all reels
+      accum += e.deltaY;
       while (accum >=  STEP){ step(+1); accum -= STEP; }
       while (accum <= -STEP){ step(-1); accum += STEP; }
     }
     viewport.addEventListener('wheel', onWheel, {passive:false});
 
-    // Touch → wheel bridge (keeps mapping on mobile)
+    // Touch → wheel bridge (same mapping on mobile)
     (function(){
       let y0=null, acc=0;
       viewport.addEventListener('touchstart', e=>{ if(locked) return; y0=e.touches[0].clientY; acc=0; }, {passive:true});
@@ -167,7 +171,7 @@
     };
   }
 
-  /* ---------- Concept rendering ---------- */
+  /* ------------------------ concept ------------------------ */
   function splitVs(s){
     const parts = String(s || '').split(/vs\./i);
     if (parts.length >= 2) return [parts[0].trim(), parts.slice(1).join('vs.').trim()];
@@ -210,10 +214,10 @@
       </div>`;
   }
 
-  /* ---------- bootstrap ---------- */
+  /* ------------------------ bootstrap ------------------------ */
   async function loadAll(){
     const out = {};
-    for (const m of LISTS){
+    for (const m of MAP){
       try{
         const json = await getJSON(m.file);
         out[m.key] = normalizeList(json);
@@ -231,14 +235,16 @@
       const lists = await loadAll();
       setStatus('');
 
+      // Build reels
       const reels = {};
-      LISTS.forEach(m=>{
+      MAP.forEach(m=>{
         const host = $(m.id);
         if (!host) return;
         const arr = lists[m.key] || [];
         reels[m.key] = makeReel(host, arr);
       });
 
+      // Buttons
       const speeds = { slow:0.9, spin:1.4, fast:2.2 };
       const btnSlow   = $('#btnSlow');
       const btnSpin   = $('#btnSpin');
@@ -264,10 +270,11 @@
       btnLock  && (btnLock.onclick  = ()=>{
         stopAll(); lockAll();
         const picks = {};
-        LISTS.forEach(m=>{
+        MAP.forEach(m=>{
           const r = reels[m.key];
           picks[m.key] = r?.value?.name || r?.value || '';
         });
+        // If you later add backstory JSON, set picks.backstory_catalyst here.
         renderConcept(picks);
         setStatus('');
       });
